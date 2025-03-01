@@ -1,0 +1,6 @@
+[submodule "front"]
+	path = front
+	url = https://github.com/Morpheus-Fatec/4S__Visiona_PolygonEditor_Front
+[submodule "back"]
+	path = back
+	url = https://github.com/Morpheus-Fatec/4S__Visiona_PolygonEditor_Back
