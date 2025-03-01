@@ -1,7 +1,7 @@
 {
 	"name": "PolygonEditor Frontend",
 	"build": {
-		"dockerfile": "../4S__Visiona_PolygonEditor_Front/Dockerfile"
+		"dockerfile": "../Dockerfile"
 	},
 	"remoteUser": "root",
 	"features": {
