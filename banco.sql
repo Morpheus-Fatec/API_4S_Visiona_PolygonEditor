@@ -1,61 +1,65 @@
 CREATE DATABASE polygoneditor;
 
 CREATE TABLE status (
-    UniqueID SERIAL PRIMARY KEY,
-    status VARCHAR(20) NOT NULL
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE tipo_solo (
-    UniqueID SERIAL PRIMARY KEY,
-    tipo VARCHAR(30) NOT NULL
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE papel (
-    UniqueID SERIAL PRIMARY KEY,
-    tipo VARCHAR(15) NOT NULL,
-    descricao TEXT,
-    nivel_acesso INT NOT NULL
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(15) NOT NULL
 );
 
 CREATE TABLE usuario (
-    UniqueID SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL,
-    papel_id INT REFERENCES papel(UniqueID)
-);
-
-CREATE TABLE talhao (
-    UniqueID SERIAL PRIMARY KEY,
-    geojson TEXT NOT NULL,
-    fazenda_id INT REFERENCES fazenda(UniqueID),
-    cultura VARCHAR(255),
-    produtividade_id INT REFERENCES produtividade(UniqueID),
-    area DECIMAL(10,2),
-    tipo_solo_id INT REFERENCES tipo_solo(UniqueID),
-    status_id INT REFERENCES status(UniqueID),
-    analista_id INT REFERENCES usuario(UniqueID)
+    papel_id INT NOT NULL REFERENCES papel(id) ON DELETE CASCADE
 );
 
 CREATE TABLE fazenda (
-    UniqueID SERIAL PRIMARY KEY,
-    Nome VARCHAR(255) NOT NULL,
-    Cidade VARCHAR(255) NOT NULL,
-    Estado VARCHAR(255) NOT NULL,
-    user_resp_id INT REFERENCES usuario(UniqueID)
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE talhao (
+    id SERIAL PRIMARY KEY,
+    geojson TEXT NOT NULL,
+    fazenda_id INT NOT NULL REFERENCES fazenda(id) ON DELETE CASCADE,
+    cultura VARCHAR(255),
+    area DECIMAL(10,2),
+    tipo_solo_id INT REFERENCES tipo_solo(id) ON DELETE SET NULL,
+    status_id INT REFERENCES status(id) ON DELETE SET NULL,
+    analista_id INT REFERENCES usuario(id) ON DELETE SET NULL
+);
+
+CREATE TABLE talhao_imagem (
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
+    imagem_url TEXT NOT NULL, -- Caminho do arquivo no servidor ou S3
+    data_upload TIMESTAMP DEFAULT now()
 );
 
 CREATE TABLE produtividade (
-    UniqueID SERIAL PRIMARY KEY,
-    talhao_id INT REFERENCES talhao(UniqueID),
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
     ano INT NOT NULL,
     quantidade DECIMAL(10,2) NOT NULL
 );
 
 CREATE TABLE talhao_hist (
-    UniqueID SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
     geojson TEXT NOT NULL,
-    data_atualizacao TIMESTAMP NOT NULL,
-    analista_id INT REFERENCES usuario(UniqueID),
-    status_id INT REFERENCES status(UniqueID)
+    data_atualizacao TIMESTAMP DEFAULT now(),
+    analista_id INT REFERENCES usuario(id) ON DELETE SET NULL,
+    status_id INT REFERENCES status(id) ON DELETE SET NULL
 );
