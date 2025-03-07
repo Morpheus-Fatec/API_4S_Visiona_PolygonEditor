@@ -25,37 +25,37 @@ CREATE TABLE usuario (
     papel_id INT REFERENCES papel(UniqueID)
 );
 
+CREATE TABLE talhao (
+    UniqueID SERIAL PRIMARY KEY,
+    geojson TEXT NOT NULL,
+    fazenda_id INT REFERENCES fazenda(UniqueID),
+    cultura VARCHAR(255),
+    produtividade_id INT REFERENCES produtividade(UniqueID),
+    area DECIMAL(10,2),
+    tipo_solo_id INT REFERENCES tipo_solo(UniqueID),
+    status_id INT REFERENCES status(UniqueID),
+    analista_id INT REFERENCES usuario(UniqueID)
+);
+
 CREATE TABLE fazenda (
     UniqueID SERIAL PRIMARY KEY,
     Nome VARCHAR(255) NOT NULL,
     Cidade VARCHAR(255) NOT NULL,
     Estado VARCHAR(255) NOT NULL,
-    user_resp_id INT REFERENCES Usuarios(UniqueID)
+    user_resp_id INT REFERENCES usuario(UniqueID)
 );
 
 CREATE TABLE produtividade (
     UniqueID SERIAL PRIMARY KEY,
-    talhao_id INT REFERENCES Talhao(UniqueID),
+    talhao_id INT REFERENCES talhao(UniqueID),
     ano INT NOT NULL,
     quantidade DECIMAL(10,2) NOT NULL
-);
-
-CREATE TABLE talhao (
-    UniqueID SERIAL PRIMARY KEY,
-    geojson TEXT NOT NULL,
-    fazenda_id INT REFERENCES Fazenda(UniqueID),
-    cultura VARCHAR(255),
-    produtividade_id INT REFERENCES Produtividade(UniqueID),
-    area DECIMAL(10,2),
-    tipo_solo_id INT REFERENCES tipo_solo(UniqueID),
-    status_id INT REFERENCES status(UniqueID),
-    analista_id INT REFERENCES Usuarios(UniqueID)
 );
 
 CREATE TABLE talhao_hist (
     UniqueID SERIAL PRIMARY KEY,
     geojson TEXT NOT NULL,
     data_atualizacao TIMESTAMP NOT NULL,
-    analista_id INT REFERENCES Usuarios(UniqueID),
+    analista_id INT REFERENCES usuario(UniqueID),
     status_id INT REFERENCES status(UniqueID)
 );
