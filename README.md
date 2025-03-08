@@ -1,4 +1,4 @@
-# <p align = "center"> Morpheus - API 3º Semestre - BD 2024
+# <p align = "center"> Morpheus x Visiona - API 4º Semestre - BD 2025
 Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as correções. Projeto desenvolvido para a disciplina de Tecnologia em Banco de Dados da Fatec São José dos Campos - Prof. Jessen Vidal.
 
 <br>
