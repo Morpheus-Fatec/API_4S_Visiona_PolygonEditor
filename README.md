@@ -40,7 +40,7 @@ Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as
 
 ## :anger: <a id=descrição-do-desafio> Descrição do Desafio: </a>
 
-Desenvolver uma ferramenta para captura e armazenamento de notícias estratégicas e dados relevantes associados.
+Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as correções..
 
 <br>
 
@@ -56,9 +56,10 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 |-----------------------------------------|-----------|
 | Cadastro de geometria (.geojson) | I      |
 | Mapa para visualização e edição de talhões agrícolas   | II       |
-| Gestão de usuários                      | III       |
-| Métricas           | VI        |
-| Dashboards interativos                 |    V     |
+| Download dos talhões editados                     | III       |
+| Gestão de usuários                      | IV       |
+| Métricas           | V       |
+| Dashboards                 |    VI   |
 
 
 
@@ -80,21 +81,18 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 <br>
 
 ## :date: <a id="product-backlog"> Product BackLog: </a>
-| Identificador | Como     | Desejo                                                                                                                                                                                                | Sprint | Prioridade | Dependência | Requisito     |
-|---------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|------------|-------------|---------------|
-| A             | Analista | Gerenciar portais de notícias por uma interface que me permita cadastrar endereços e possíveis autores das notícias                                                                                   | 1      | Alta       | -           | I             |
-| B             | Analista | Gerenciar tags, sendo essas conteúdos textuais livres, considerando regionalismo e palavras polissêmicas                                                                                             | 1      | Alta       | -           | III           |
-| C             | Analista | Tratar sinônimos de tags, para que a aplicação possa contemplar regionalismo nos textos das tags                                                                                                      | 2      | Alta       | B           | VI            |
-| D             | Analista | Registrar dados provenientes de portais de notícias                                                                                                                                                   | 2      | Média      | C           | VII e IV      |
-| E             | Analista | Filtrar os dados de uma consulta de dados provenientes de portais de notícias, utilizando tags tratadas para complementar regionalismos linguísticos, mediante a uma análise do conteúdo registrado  | 3      | Média      | D           | VII e VI      |
-| F             | Analista | Filtrar os dados de uma consulta de dados provenientes de portais de notícias, utilizando filtros referentes aos dados de um portal de notícias                                                        | 3      | Média      | D           | VII e VI      |
-| G             | Analista | Gerenciar fontes de dados provenientes de APIs (Interface de Programação de Aplicações) por meio de uma interface que me permita cadastrar endereços                                                  | 4      | Baixa      | -           | II            |
-| H             | Analista | Registrar dados provenientes de fontes de dados provenientes de APIs vinculadas à sua devida fonte e à sua data de registro                                                                           | 4      | Baixa      | H           | VIII e IV     |
-| I             | Analista | Filtrar os dados de uma consulta de dados provenientes de fonte de dados (API), utilizando tags tratadas para complementar regionalismos linguísticos, mediante a uma análise do conteúdo registrado | 4      | Baixa      | I           | VII e VI      |
-| J             | Analista | Filtrar os dados de uma consulta de dados provenientes de fonte de dados (API), utilizando filtros referentes aos dados de uma fonte de dados (API)                                                   | 4      | Baixa      | I           | VII e VI      |
-| K             | Analista | Filtrar os dados de uma consulta de dados provenientes de fonte de dados (API), utilizando filtros referentes aos dados de um registro proveniente de uma fonte de dados (API)                       | 4      | Baixa      | I           | VII e VI      |
+| ID  | Tipo de Usuário | Descrição da Funcionalidade | Sprint | Prioridade | Dependência | Requisito |
+|-----|---------------|-----------------------------|--------|------------|-------------|-----------|
+| A   | Consultor     | Cadastrar novos GeoJSON no sistema | 1 | Alta |  | Cadastro de GeoJSON |
+| B   | Analista      | Implementar mapa interativo para visualização de talhões agrícolas | 1 | Alta | A | Visualização de GeoJSON |
+| C   | Analista      | Criar funcionalidade para edição de polígonos no mapa | 2 | Alta | B | Edição de GeoJSON |
+| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Média | C | Histórico de GeoJSON |
+| F   | Analista      | Implementar controle de tempo gasto nas edições e métricas | 2 | Média | C | Métricas de GeoJSON |
+| G   | Consultor     | Acessar mapa e dashboards com métricas | 3 | Média | F | Dashboards |
+| G   | Consultor     | Dowload dos talhões tratados | 3 | Média | F | Dashboards |
+| H   | Administrador | Gerenciar usuários (cadastrar, editar, excluir) | 3 | Média | - | Controle de Usuários |
 
-<a href="/documentation/documentation.md" target="_blank">
+<a href="/documentation/backlog.md" target="_blank">
     <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
         Acessar critério de Aprovação
     </button>

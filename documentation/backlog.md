@@ -1,7 +1,7 @@
 # 📌 Backlog do Projeto
 
 ## 🏗️ Épicos
-- **Gestão de Talhões Agrícolas**
+- **Receber os Talhões Agrícolas**
 - **Mapa Interativo e Edição de GeoJSON**
 - **Histórico de Alterações**
 - **Dashboards e Métricas**
