@@ -86,8 +86,8 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 | A   | Consultor     | Cadastro de talhões agriculas (.geojson) | 1 | Alta |  | I |
 | B   | Analista      | Implementar mapa interativo para visualização de talhões agrícolas | 1 | Alta | A | II |
 | C   | Analista      | Criar funcionalidade para edição de polígonos no mapa | 2 | Alta | B | II |
-| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Média | C | III |
-| E   | Analista      | Implementar controle de tempo e edição dos talhões | 2 | Média | C | V |
+| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Alta | C | III |
+| E   | Analista      | Implementar controle de tempo e edição dos talhões | 2 | Alta | C | V |
 | F   | Consultor     | Dowload dos talhões revisados | 2 | Média | D | IV  |
 | J   | Consultor     | Acessar mapa e dashboards com métricas | 3 | Média | E | V |
 | K   | Administrador | Gerenciar usuários (cadastrar, editar, excluir) | 3 | Média | - | VI |
