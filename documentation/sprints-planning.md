@@ -1,15 +1,15 @@
 ## 🏆 Planejamento de Sprints
 
 ### 🏁 Sprint 1 (10/03 - 30/03)
-- Implementar funcionalidade de upload de arquivos GeoJSON.
+- Cadastro de Talhões Agrícolas (.geojson).
 - Implementar a visualização inicial de talhões no mapa.
 - Implementar filtros e buscas de talhões.
 
 ### 🏁 Sprint 2 (07/04 - 27/04)
 - Adicionar funcionalidade de edição de polígonos no mapa.
-- Controle de versão de talhões.
-- Permitir download dos talhões editados.
-- Controle do tempo gasto e alterações feitas nos talhões para gerar métricas.
+- Controle de versão de talhões, incluindo histórico de alterações.
+- Implementar download dos talhões revisados.
+- Controle do tempo gasto e alterações feitas nos talhões para gerar métricas sobre o analista e a IA.
 - Criar controle de permissões para Administrador, Analista e Consultor.
 
 ### 🏁 Sprint 3 (05/05 - 25/05)
@@ -18,6 +18,3 @@
 
 ### 🏁 Sprint Final e Feira de Soluções (26/05 - 29/12)
 - Apresentação da solução.
-
-
----

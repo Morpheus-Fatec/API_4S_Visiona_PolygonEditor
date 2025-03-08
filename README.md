@@ -54,12 +54,12 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 | Funcionalidade                          | Indicador |
 |-----------------------------------------|-----------|
-| Cadastro de geometria (.geojson) | I      |
-| Mapa para visualização e edição de talhões agrícolas   | II       |
-| Download dos talhões editados                     | III       |
-| Gestão de usuários                      | IV       |
-| Métricas           | V       |
-| Dashboards                 |    VI   |
+| Cadastro de talhões agriculas (.geojson) | I      |
+| Mapa Interativo para Visualização e Edição de GeoJSON   | II       |
+| Histórico de Alterações nos Talhões     | III       |
+| Download dos Talhões Revisados         | IV        |
+| Dashboards com Métricas sobre os Consultores e a IA   | V   |
+| Controle de Permissões e Usuários          | VI      |
 
 
 
@@ -83,14 +83,14 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 ## :date: <a id="product-backlog"> Product BackLog: </a>
 | ID  | Tipo de Usuário | Descrição da Funcionalidade | Sprint | Prioridade | Dependência | Requisito |
 |-----|---------------|-----------------------------|--------|------------|-------------|-----------|
-| A   | Consultor     | Cadastrar novos GeoJSON no sistema | 1 | Alta |  | Cadastro de GeoJSON |
-| B   | Analista      | Implementar mapa interativo para visualização de talhões agrícolas | 1 | Alta | A | Visualização de GeoJSON |
-| C   | Analista      | Criar funcionalidade para edição de polígonos no mapa | 2 | Alta | B | Edição de GeoJSON |
-| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Média | C | Histórico de GeoJSON |
-| F   | Analista      | Implementar controle de tempo gasto nas edições e métricas | 2 | Média | C | Métricas de GeoJSON |
-| G   | Consultor     | Acessar mapa e dashboards com métricas | 3 | Média | F | Dashboards |
-| G   | Consultor     | Dowload dos talhões tratados | 3 | Média | F | Dashboards |
-| H   | Administrador | Gerenciar usuários (cadastrar, editar, excluir) | 3 | Média | - | Controle de Usuários |
+| A   | Consultor     | Cadastro de talhões agriculas (.geojson) | 1 | Alta |  | I |
+| B   | Analista      | Implementar mapa interativo para visualização de talhões agrícolas | 1 | Alta | A | II |
+| C   | Analista      | Criar funcionalidade para edição de polígonos no mapa | 2 | Alta | B | II |
+| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Média | C | III |
+| E   | Analista      | Implementar controle de tempo e edição dos talhões | 2 | Média | C | V |
+| F   | Consultor     | Dowload dos talhões revisados | 2 | Média | D | IV  |
+| J   | Consultor     | Acessar mapa e dashboards com métricas | 3 | Média | E | V |
+| K   | Administrador | Gerenciar usuários (cadastrar, editar, excluir) | 3 | Média | - | VI |
 
 <a href="/documentation/backlog.md" target="_blank">
     <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
