@@ -1,13 +1,14 @@
 # <p align = "center"> Morpheus - API 3º Semestre - BD 2024
 Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as correções. Projeto desenvolvido para a disciplina de Tecnologia em Banco de Dados da Fatec São José dos Campos - Prof. Jessen Vidal.
 
-
-<div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
-    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" width="50%">
-    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" width="50%">
+<br>
+<br>
+<div style="display: flex; justify-content: center; gap: 40px; align-items: center;">
+    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" width="40%">
+    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" width="40%">
 </div>
-
-
+<br>
+<br>
 <p align="center">
   <a href="#integrantes-da-equipe">Integrantes da Equipe</a> •
   <a href="#descrição-do-desafio">Desafio</a> •
