@@ -82,16 +82,21 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 <br>
 
 ## :date: <a id="product-backlog"> Product BackLog: </a>
-| ID  | Tipo de Usuário | Descrição da Funcionalidade | Sprint | Prioridade | Dependência | Requisito |
-|-----|---------------|-----------------------------|--------|------------|-------------|-----------|
-| A   | Consultor     | Cadastro de talhões agriculas (.geojson) | 1 | Alta |  | I |
-| B   | Analista      | Implementar mapa interativo para visualização de talhões agrícolas | 1 | Alta | A | II |
-| C   | Analista      | Criar funcionalidade para edição de polígonos no mapa | 2 | Alta | B | II |
-| D   | Analista      | Controle de versão para histórico de alterações em talhões | 2 | Alta | C | III |
-| E   | Analista      | Implementar controle de tempo e edição dos talhões | 2 | Alta | C | V |
-| F   | Consultor     | Dowload dos talhões revisados | 2 | Média | D | IV  |
-| J   | Consultor     | Acessar mapa e dashboards com métricas | 3 | Média | E | V |
-| K   | Administrador | Gerenciar usuários (cadastrar, editar, excluir) | 3 | Média | - | VI |
+| ID  | Como           | Desejo                                                                                     | Sprint | Prioridade | Dependência | Requisito |
+|-----|----------------|--------------------------------------------------------------------------------------------|--------|------------|-------------|-----------|
+| A   | Consultor      | Cadastrar talhões agrícolas via upload de arquivos GeoJSON, para que eu possa visualizá-los e editá-los no sistema. | 1      | Alta       | -           | I         |
+| B   | Analista       | Visualizar os talhões agrícolas em um mapa interativo, para que eu possa analisar as áreas cadastradas. | 1      | Alta       | A           | II        |
+| C   | Analista       | Filtrar e buscar talhões agrícolas por nome, cultura, cidade ou estado, para que eu possa encontrar rapidamente as áreas de interesse. | 1      | Média      | B           | II        |
+| D   | Consultor      | Visualizar informações detalhadas dos talhões (nome da fazenda, cultura, área, etc.), para que eu possa tomar decisões informadas. | 1      | Baixa      | B           | II        |
+| E   | Analista       | Editar os polígonos dos talhões no mapa, para que eu possa corrigir erros ou ajustar as áreas. | 2      | Alta       | B           | II        |
+| F   | Analista       | Visualizar o histórico de alterações dos talhões, para que eu possa auditar as mudanças realizadas. | 2      | Alta       | E           | III       |
+| G   | Consultor      | Baixar os talhões revisados em formato GeoJSON, para que eu possa reutilizá-los em outras ferramentas. | 2      | Alta       | E           | IV        |
+| H   | Administrador  | Visualizar métricas de produtividade dos analistas, para que eu possa avaliar o desempenho da equipe. | 2      | Alta       | E           | V         |
+| I   | Analista       | Implementar controle de tempo e edição dos talhões, para que eu possa medir minha produtividade. | 2      | Alta       | E           | V         |
+| J   | Consultor      | Acessar mapa e dashboards com métricas, para que eu possa acompanhar o progresso do projeto. | 2      | Média      | H. I   | V         |
+| K   | Administrador  | Gerenciar usuários (cadastrar, editar, excluir), para que eu possa controlar o acesso ao sistema. | 3      | Média      | -           | VI        |
+| L   | Administrador  | Atribuir permissões específicas para cada tipo de usuário, para que eu possa garantir a segurança do sistema. | 3      | Média      | K           | VI        |
+| N   | Analista       | Receber notificações sobre talhões que precisam de revisão, para que eu possa priorizar meu trabalho. | 3      | Baixa      | E           | III       |
 
 <a href="/documentation/backlog.md" target="_blank">
     <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
