@@ -41,7 +41,7 @@
 - Exibir informações detalhadas dos talhões:  
   - Nome do talhão  
   - Nome da fazenda  
-  - Cultura (soja, milho, etc.)  
+  - Cultura
   - Safra  
   - Produtividade por ano  
   - Área (ha)  
