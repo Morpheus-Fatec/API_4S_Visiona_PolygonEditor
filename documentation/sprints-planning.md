@@ -1,5 +1,5 @@
 
-## 🏆 Planejamento de Sprints Refatorado (Pronto na Sprint 3)
+## 🏆 Planejamento de Sprints
 
 ### 🏁 Sprint 1 (10/03 - 30/03)
 - **Cadastro de Talhões Agrícolas (.geojson):**
