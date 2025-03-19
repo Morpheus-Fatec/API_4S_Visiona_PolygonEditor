@@ -20,7 +20,7 @@
   - Exibir informações detalhadas dos talhões:
     - Nome talhão
     - Nome da fazenda
-    - Cultura (soja, milho, etc.)
+    - Cultura
     - Safra
     - Produtividade por ano
     - Área (ha)
@@ -37,18 +37,14 @@
   
 - **Controle do estado do talhão:**
   - Ciclo de vida de um talhão:
-      Pendente: Inserido no sistema, ainda sem revisão.
-      Revisado: Aguardando aprovação de um consultor.
-      Sem Solução: Quando a revisão não é possível (necessária justificativa).
-      Reprovado: Quando um consultor reprova a revisão de um analista (necessária justificativa) e sendo possível uma nova revisão.
-      Aprovado: Quando o consultor aprova a edição do analista.
+    - Pendente: Inserido no sistema, ainda sem revisão.
+    - Revisado: Aguardando aprovação de um consultor.
+    - Sem Solução: Quando a revisão não é possível (necessária justificativa).
+    - Reprovado: Quando um consultor reprova a revisão de um analista (necessária justificativa) e sendo possível uma nova revisão.
+    - Aprovado: Quando o consultor aprova a edição do analista.
 
 - **Download dos Talhões Revisados:**
   - Permitir download do GeoJSON atualizado após edição.
-
-- **Métricas de Produtividade dos Analistas:**
-  - Implementar métricas como tempo gasto, polígonos modificados e diferença de área.
-  - Exibir dados em gráficos interativos.
 
 - **Controle de Tempo e Edição:**
   - Rastrear tempo gasto em cada edição.
@@ -56,22 +52,19 @@
 
 - **Dashboards com Métricas de Produtividade:**
   - Exibir métricas de produtividade dos analistas e desempenho da IA.
-  - Adicionar filtros por período, cultura ou região.
-
-- **Taxa de Acerto da IA:**
-  - Comparar talhões gerados pela IA com correções feitas pelos analistas.
+  - Adicionar filtros por safra, cultura, solo ou região.
 
 ---
 
 ### 🏁 Sprint 3 (05/05 - 25/05)
-
-- **Taxa de Acerto da IA:**
-  - Exibir taxa de acerto em porcentagem.
-
 - **Gerenciamento de Usuários:**
   - Permitir cadastro, edição e exclusão de usuários.
   - Atribuir permissões específicas para cada tipo de usuário (Administrador, Analista, Consultor).
-
+ 
+- **Métricas de Produtividade dos Analistas:**
+  - Implementar métricas como tempo gasto, polígonos modificados e diferença de área.
+  - Exibir dados em gráficos interativos.
+ 
 - **Notificações sobre Talhões Pendentes:**
   - Enviar notificações para analistas sobre talhões que precisam de revisão.
 
