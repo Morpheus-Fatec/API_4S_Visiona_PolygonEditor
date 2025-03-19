@@ -2,32 +2,45 @@
 
 ### 🏁 Sprint 1 (10/03 - 30/03)
 - **Cadastro de Talhões Agrícolas (.geojson):**
-  - Implementar upload de arquivos GeoJSON.
-  - Validar campos obrigatórios (nome da fazenda, cultura, produtividade, etc.).
-  - Salvar dados no banco de dados.
+  - Upload de arquivos GeoJSON que contenha os limites dos talhões(saida).
+  - Upload de arquivos GeoJSON que contenha a classificação automática da IA(automatico).
+  - Upload de uma lista de fotos(.tif)
+  - Personalizar as propriedades dos talhões.
 
-- **Visualização Inicial de Talhões no Mapa:**
-  - Integrar biblioteca de mapas (Leaflet).
-  - Exibir polígonos dos talhões cadastrados.
-  - Adicionar interatividade (tooltips com informações ao clicar nos polígonos).
+- **Mapa global de talhões:**
+  - Mapa global navegável para visualização de talhões.
+  - Exibir mais informações desse talhões.
 
-- **Filtros e Buscas de Talhões:**
-  - Implementar filtros por nome, cultura, cidade e estado.
-  - Exibir resultados no mapa e em uma lista.
-
+- **Buscas de Talhões:**
+  - Exibir uma lista de talhões que possibilite operações.
+  - Implementar filtros por nome, cultura, cidade, estado e situação.
+  
 - **Visualização de Informações Detalhadas:**
-  - Exibir informações detalhadas dos talhões (nome da fazenda, cultura, área, etc.).
+  - Exibir informações detalhadas dos talhões:
+    - Nome talhão
+    - Nome da fazenda
+    - Cultura (soja, milho, etc.)
+    - Safra
+    - Produtividade por ano
+    - Área (ha)
+    - Tipo de solo
+    - Cidade
+    - Estado
 
 ---
 
 ### 🏁 Sprint 2 (07/04 - 27/04)
-- **Edição de Polígonos no Mapa:**
-  - Permitir mover, redimensionar, adicionar e remover vértices dos polígonos.
-  - Salvar alterações automaticamente no banco de dados.
+- **Edição da classificação do talhão:**
+  - Permitir redimensionar, adicionar e remover vértices da classificação automática.
+  - Armazenar alterações.
   
-- **Histórico de Alterações nos Talhões:**
-  - Registrar todas as alterações (quem editou, quando e o que foi modificado).
-  - Permitir visualização de versões anteriores.
+- **Controle do estado do talhão:**
+  - Ciclo de vida de um talhão:
+      Pendente: Inserido no sistema, ainda sem revisão.
+      Revisado: Aguardando aprovação de um consultor.
+      Sem Solução: Quando a revisão não é possível (necessária justificativa).
+      Reprovado: Quando um consultor reprova a revisão de um analista (necessária justificativa) e sendo possível uma nova revisão.
+      Aprovado: Quando o consultor aprova a edição do analista.
 
 - **Download dos Talhões Revisados:**
   - Permitir download do GeoJSON atualizado após edição.
