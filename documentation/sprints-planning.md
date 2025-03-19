@@ -1,3 +1,4 @@
+
 ## 🏆 Planejamento de Sprints Refatorado (Pronto na Sprint 3)
 
 ### 🏁 Sprint 1 (10/03 - 30/03)
