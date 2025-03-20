@@ -109,7 +109,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 ## :chart_with_upwards_trend: <a id="grafico-burndown"> Gráfico Burndown </a>
 <div align="center">
-    <img src="./documentation/burndown/BurnDownChartSprint4.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
+    <img src="./documentation/images/BurndownSprint1.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
 </div>
 
 <br>
