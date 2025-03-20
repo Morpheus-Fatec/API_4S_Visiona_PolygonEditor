@@ -1,70 +1,65 @@
-CREATE DATABASE Demeter;
+CREATE DATABASE polygoneditor;
 
-\c Demeter;
-
-CREATE TABLE Fazendas (
-    id_fazenda SERIAL PRIMARY KEY,
-    nome VARCHAR(255) UNIQUE NOT NULL,
-    cidade VARCHAR(255) NOT NULL,
-    estado VARCHAR(100) NOT NULL
+CREATE TABLE status (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE Culturas (
-    id_cultura SERIAL PRIMARY KEY,
-    nome VARCHAR(255) UNIQUE NOT NULL
+CREATE TABLE tipo_solo (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE Solos (
-    id_solo SERIAL PRIMARY KEY,
-    nome VARCHAR(255) UNIQUE NOT NULL
+CREATE TABLE papel (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(15) NOT NULL
 );
 
-CREATE TABLE Leituras (
-    id_leitura SERIAL PRIMARY KEY
-);
-
-CREATE TYPE estado_talhao AS ENUM ('Pendente', 'Aprovado', 'Em Analise', 'Reprovado', 'Sem Solução');
-
-CREATE TABLE Talhoes (
-    id_talhao SERIAL PRIMARY KEY,
-    id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE SET NULL,
-    id_fazenda INTEGER REFERENCES Fazendas(id_fazenda) ON DELETE CASCADE,
-    safra VARCHAR(7) NOT NULL,
-    id_cultura INTEGER REFERENCES Culturas(id_cultura) ON DELETE SET NULL,
-    id_solo INTEGER REFERENCES Solos(id_solo) ON DELETE SET NULL,
+CREATE TABLE usuario (
+    id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
-    area DECIMAL(10,2) NOT NULL,
-    produtividade FLOAT NOT NULL,
-    estado estado_talhao NOT NULL,
-    coordenadas_originais TEXT NOT NULL,
-    coordenadas_atuais TEXT NOT NULL
-);
-
-CREATE TABLE ImagensApoio (
-    id_img SERIAL PRIMARY KEY,
-    id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE CASCADE,
-    base64 TEXT NOT NULL
-);
-
-CREATE TABLE Usuarios (
-    id_usuario SERIAL PRIMARY KEY,
-    senha VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    administrador BOOLEAN NOT NULL DEFAULT FALSE,
-    consultor BOOLEAN NOT NULL DEFAULT FALSE,
-    analista BOOLEAN NOT NULL DEFAULT FALSE
+    senha VARCHAR(255) NOT NULL,
+    papel_id INT NOT NULL REFERENCES papel(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Classes (
-    id_classe SERIAL PRIMARY KEY,
-    nome VARCHAR(255) UNIQUE NOT NULL
+CREATE TABLE fazenda (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE Classificacoes (
-    id_classificacao SERIAL PRIMARY KEY,
-    coordenadas_atuais TEXT NOT NULL,
-    coordenadas_originais TEXT NOT NULL,
-    id_talhao INTEGER REFERENCES Talhoes(id_talhao) ON DELETE CASCADE,
-    id_classe INTEGER REFERENCES Classes(id_classe) ON DELETE SET NULL,
-    area DECIMAL(10,2) NOT NULL
+CREATE TABLE talhao (
+    id SERIAL PRIMARY KEY,
+    geojson TEXT NOT NULL,
+    fazenda_id INT NOT NULL REFERENCES fazenda(id) ON DELETE CASCADE,
+    cultura VARCHAR(255),
+    area DECIMAL(10,2),
+    tipo_solo_id INT REFERENCES tipo_solo(id) ON DELETE SET NULL,
+    status_id INT REFERENCES status(id) ON DELETE SET NULL,
+    analista_id INT REFERENCES usuario(id) ON DELETE SET NULL
+);
+
+CREATE TABLE talhao_imagem (
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
+    imagem_url TEXT NOT NULL, -- Caminho do arquivo no servidor ou S3
+    data_upload TIMESTAMP DEFAULT now()
+);
+
+CREATE TABLE produtividade (
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
+    ano INT NOT NULL,
+    quantidade DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE talhao_hist (
+    id SERIAL PRIMARY KEY,
+    talhao_id INT NOT NULL REFERENCES talhao(id) ON DELETE CASCADE,
+    geojson TEXT NOT NULL,
+    data_atualizacao TIMESTAMP DEFAULT now(),
+    analista_id INT REFERENCES usuario(id) ON DELETE SET NULL,
+    status_id INT REFERENCES status(id) ON DELETE SET NULL
 );
