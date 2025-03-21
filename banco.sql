@@ -43,7 +43,8 @@ CREATE TABLE Talhoes (
 CREATE TABLE ImagensApoio (
     id_img SERIAL PRIMARY KEY,
     id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE CASCADE,
-    base64 TEXT NOT NULL
+    base64 TEXT NOT NULL,
+    meta_dados TEXT NOT NULL
 );
 
 CREATE TABLE Usuarios (
