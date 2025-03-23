@@ -1,74 +1,117 @@
-## 🏆 Planejamento de Sprints Refatorado (Pronto na Sprint 3)
+## 🏁 Sprint 1 (10/03 - 30/03)
 
-### 🏁 Sprint 1 (10/03 - 30/03)
-- **Cadastro de Talhões Agrícolas (.geojson):**
-  - Implementar upload de arquivos GeoJSON.
-  - Validar campos obrigatórios (nome da fazenda, cultura, produtividade, etc.).
-  - Salvar dados no banco de dados.
+### 📌 *Cadastro de Talhões Agrícolas (.geojson)*
 
-- **Visualização Inicial de Talhões no Mapa:**
-  - Integrar biblioteca de mapas (Leaflet).
-  - Exibir polígonos dos talhões cadastrados.
-  - Adicionar interatividade (tooltips com informações ao clicar nos polígonos).
+- Implementar upload de arquivos GeoJSON contendo:
+  - Os limites dos talhões (saída).
+  - A classificação automática da IA (automático).
+- Permitir upload de uma lista de fotos de apoio (.tif).
+- Criar funcionalidade para personalização das propriedades dos talhões.
 
-- **Filtros e Buscas de Talhões:**
-  - Implementar filtros por nome, cultura, cidade e estado.
-  - Exibir resultados no mapa e em uma lista.
+### 🗺️ *Mapa Global de Talhões*
 
-- **Visualização de Informações Detalhadas:**
-  - Exibir informações detalhadas dos talhões (nome da fazenda, cultura, área, etc.).
+- Desenvolver um mapa global navegável para visualização dos talhões.
+- Implementar exibição de informações detalhadas ao selecionar um talhão.
 
----
+### 🔎 *Buscas de Talhões*
 
-### 🏁 Sprint 2 (07/04 - 27/04)
-- **Edição de Polígonos no Mapa:**
-  - Permitir mover, redimensionar, adicionar e remover vértices dos polígonos.
-  - Salvar alterações automaticamente no banco de dados.
-  
-- **Histórico de Alterações nos Talhões:**
-  - Registrar todas as alterações (quem editou, quando e o que foi modificado).
-  - Permitir visualização de versões anteriores.
+- Criar uma lista de talhões que permita buscas precisas.
+  - Adicionar filtros por:
+    - Nome do talhão
+    - Fazenda
+    - Cultura
+    - Solo
+    - Safra
+    - Situação
+  - Permitir operação para visualizar informações detalhadas do talhão.
 
-- **Download dos Talhões Revisados:**
-  - Permitir download do GeoJSON atualizado após edição.
+### 📄 *Visualização de Informações Detalhadas*
 
-- **Métricas de Produtividade dos Analistas:**
-  - Implementar métricas como tempo gasto, polígonos modificados e diferença de área.
-  - Exibir dados em gráficos interativos.
-
-- **Controle de Tempo e Edição:**
-  - Rastrear tempo gasto em cada edição.
-  - Calcular diferença de área e número de polígonos modificados.
-
-- **Dashboards com Métricas de Produtividade:**
-  - Exibir métricas de produtividade dos analistas e desempenho da IA.
-  - Adicionar filtros por período, cultura ou região.
-
-- **Taxa de Acerto da IA:**
-  - Comparar talhões gerados pela IA com correções feitas pelos analistas.
+- Exibir detalhes completos do talhão, incluindo:
+  - Nome do talhão
+  - Fazenda
+    - Cidade
+    - Estado
+  - Cultura
+  - Safra
+  - Produtividade por ano
+  - Área (ha)
+  - Tipo de solo
+  - Classificação automática
 
 ---
 
-### 🏁 Sprint 3 (05/05 - 25/05)
+## 🏁 Sprint 2 (07/04 - 27/04)
 
-- **Taxa de Acerto da IA:**
-  - Exibir taxa de acerto em porcentagem.
+### 🔄 *Controle do Estado do Talhão*
 
-- **Gerenciamento de Usuários:**
-  - Permitir cadastro, edição e exclusão de usuários.
-  - Atribuir permissões específicas para cada tipo de usuário (Administrador, Analista, Consultor).
+- Definir ciclo de vida do talhão:
+  - **Pendente**: Inserido no sistema, sem revisão.
+  - **Em análise**: Aguardando aprovação de um consultor.
+  - **Sem Solução**: Revisão não possível (necessária justificativa).
+  - **Reprovado**: Consultor reprova a revisão do analista (necessária justificativa, permitindo nova revisão).
+  - **Aprovado**: Consultor aprova a edição feita pelo analista.
 
-- **Notificações sobre Talhões Pendentes:**
-  - Enviar notificações para analistas sobre talhões que precisam de revisão.
+### ⚙️ *Operações com os Talhões*
 
-- **Revisão e Correção de Bugs:**
-  - Testar todas as funcionalidades e corrigir possíveis erros.
+- Implementar funcionalidade para análise dos talhões.
+- Implementar funcionalidade para edição.
+- Implementar funcionalidade para exclusão.
+- Permitir download da classificação manual aprovada.
 
-- **Preparação para Apresentação:**
-  - Criar demonstrações para a banca avaliadora.
-  - Preparar documentação final (manuais, especificação da API, etc.).
+### ✏️ *Edição da Classificação automática do Talhão*
 
-  ---
+- Criar funcionalidade para:
+  - Redimensionar, adicionar e remover vértices da classificação automática.
+  - Utilizar imagens de apoio na edição.
+  - Armazenar alterações feitas.
 
-  ### 🏁 Sprint Final e Feira de Soluções (26/05 - 29/12)
-- Apresentação da solução.
+### 📊 *Levantamento de Métricas da Edição do Talhão*
+
+- Monitorar tempo gasto em cada edição.
+- Comparar diferenças entre a classificação automática e a manual.
+
+### 👥 *Gerenciamento de Usuários*
+
+- Criar sistema de cadastro, edição e exclusão de usuários.
+- Definir permissões específicas para os tipos de usuários:
+
+#### **Tipos de Usuários e Permissões**
+
+**Administrador**
+- Criar, editar e excluir usuários.
+- Realizar as mesmas funções que o Consultor e o Analista.
+
+**Consultor**
+- Acessar dashboards e mapa.
+- Cadastrar talhões no sistema.
+- Visualizar lista de talhões cadastrados.
+- Validar a revisão manual.
+- Realizar download da classificação manual aprovada.
+
+**Analista**
+- Visualizar lista de talhões cadastrados.
+- Realizar revisão manual das áreas.
+
+- Restringir visões e operações conforme o tipo de usuário.
+
+---
+
+## 🏁 Sprint 3 (05/05 - 25/05)
+
+### 📈 *Dashboards com Métricas de Produtividade*
+
+- Desenvolver dashboards com métricas de produtividade:
+  - Análise do desempenho dos analistas.
+  - Avaliação do desempenho da IA.
+  - Adicionar filtros por:
+    - Nome do talhão
+    - Fazenda
+    - Cultura
+    - Solo
+    - Safra
+
+### 🛠️ *Revisão e Correção de Bugs*
+
+- Revisão de funcionalidades.
+- Correção de possíveis bugs.
