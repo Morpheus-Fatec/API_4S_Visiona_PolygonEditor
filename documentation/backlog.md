@@ -2,8 +2,8 @@
 
 ## 🏗️ Épicos
 - [**Cadastro de Talhões Agrícolas (.geojson)**](#📌-cadastro-de-talhões-agriculas-geojson)
-- [**Mapa Interativo e Edição de GeoJSON**](#🗺️-mapa-interativo-para-visualização-e-edição-de-geojson)
-- [**Histórico de Alterações nos Talhões**](#🔄-histórico-de-alterações-nos-talhões)
+- [**Mapa e visualização dos talhões**](#🗺️-Visualização-de-talhões-por-meio-de-mapa-e-lista)
+- [**Edição de GeoJSON**](#🗺️-mapa-interativo-para-visualização-e-edição-de-geojson)
 - [**Download dos Talhões Revisados**](#📥-download-dos-talhões-revisados)
 - [**Dashboards com Métricas sobre os Consultores e a IA**](#📊-gerar-métricas-de-produtividade-dos-analistas)
 - [**Controle de Permissões e Usuários**](#🔐-definir-permissões-e-funções-para-usuários)
@@ -24,23 +24,20 @@
 
   ---
 
-### 🗺️ Mapa Interativo para Visualização e Edição de GeoJSON
-**Título:** Implementar mapa interativo para visualização e edição de GeoJSON  
+
+### 🗺️ Visualização de talhões por meio de mapa e lista
+**Título:** Implementar mapa e uma lista de talhões.  
 **Descrição:** 
-- Exibir talhões agrícolas com base nos GeoJSON recebidos.
-- Permitir edição dos polígonos (mover, redimensionar, adicionar e remover).
-- Filtro para busca de talhões.
-- Opção de download dos talhões.
-- Rastrear tempo de edição, diferença de área e número de polígonos modificados.
+- Mapa para visualização global.
+- Lista para que seja possível filtrar os talhões.
 
 ---
 
-### 🔄 Histórico de Alterações nos Talhões
-**Título:** Implementar histórico de alterações de GeoJSON  
-**Descrição:**
-- Registro de mudanças nos polígonos (adição, remoção, edição).
-- Armazenamento de versões anteriores do GeoJSON.
-- Controle de versão para auditoria.
+### 🗺️ Edição dos Talhões
+**Título:** Implementar mapa e uma lista de talhões.  
+**Descrição:** 
+- Mapa para visualização global.
+- Lista para que seja possível filtrar os talhões.
 
 ---
 
