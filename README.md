@@ -141,11 +141,10 @@ Acesse o Board de atividades do Time para visualizar as atividades planejadas, e
 
 
 ## :bookmark: <a id="tecnologias-utilizadas"> Tecnologias Utilizadas </a>
-> * [Java](https://www.java.com/pt-BR/) - Versão 21
-> * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Versão ES6+
+> * [Java](https://www.java.com/pt-BR/) - Versão 17
+> * [Node](https://nodejs.org/pt) - Versão 22.14
 > * [Bootstrap](https://getbootstrap.com/) - Versão 5.3.3
-> * [MySQL](https://www.mysql.com/) - Versão 8.0
-> * [JDBC MySQL](https://dev.mysql.com/downloads/connector/j/) - Versão 8.0.26
+> * [PostgreSQL](https://www.postgresql.org/) - Versão 15.2
 > * [Maven](https://maven.apache.org/) - Versão 3.8.1
 > * [Spring Boot](https://spring.io/projects/spring-boot) - Versão 3.3.3
 > * [Vue.js](https://vuejs.org/) - Versão 3
