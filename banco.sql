@@ -36,14 +36,14 @@ CREATE TABLE Talhoes (
     area DECIMAL(10,2) NOT NULL,
     produtividade FLOAT NOT NULL,
     estado estado_talhao NOT NULL,
-    coordenadas_originais TEXT NOT NULL,
-    coordenadas_atuais TEXT NOT NULL
+    coordenadas TEXT NOT NULL
 );
 
 CREATE TABLE ImagensApoio (
     id_img SERIAL PRIMARY KEY,
     id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE CASCADE,
-    endereco TEXT NOT NULL
+    endereco TEXT NOT NULL,
+    nome VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Usuarios (
