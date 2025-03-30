@@ -14,7 +14,7 @@ Abra o Gerenciador de fonte de Dados para selecionar o BigTIFF desejado.
 
 Clique com o botão direito sobre a camada desejada e vá até a opção **Exportar**.
 
-![Exportar camada]/documentation/images/bigtiff-para-tiff/image-2.png)
+![Exportar camada](/documentation/images/bigtiff-para-tiff/image-2.png)
 
 ### Passo 3: Selecionar o Formato de Saída
 
