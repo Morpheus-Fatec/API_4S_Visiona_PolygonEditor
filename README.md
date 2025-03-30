@@ -118,7 +118,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 Acesse o Board de atividades do Time para visualizar as atividades planejadas, em desenvolvimento e prontas.
 
-<a href="https://github.com/orgs/Morpheus-Fatec/projects/1/views/1" target="_blank">
+<a href="https://github.com/orgs/Morpheus-Fatec/projects/1/views/4" target="_blank">
     <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
         Board de Atividades
     </button>
