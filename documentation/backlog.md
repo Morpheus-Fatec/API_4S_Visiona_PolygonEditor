@@ -4,7 +4,7 @@ _Última atualização: 05/04/2025_
 ## 📚 Índice dos Épicos
 
 - 🟩 [Épico 1: Cadastro e Gerenciamento de Talhões](#épico-1-cadastro-e-gerenciamento-de-talhões)
-- 🟦 [Épico 2: Revisão Manual e Classificação de Talhões](#épico-2-revisão-manual-e-classificação-de-talhões)
+- 🟦 [Épico 2: Revisão e Classificação manual de Talhões](#épico-2-revisão-e-classificação-manual-de-talhões)
 - 🟨 [Épico 3: Controle de Estado do Talhão](#épico-3-controle-de-estado-do-talhão)
 - 🟧 [Épico 4: Gerenciamento de Usuários e Permissões](#épico-4-gerenciamento-de-usuários-e-permissões)
 - 🟪 [Épico 5: Dashboards e Métricas de Produtividade](#épico-5-dashboards-e-métricas-de-produtividade)
@@ -27,13 +27,13 @@ _Última atualização: 05/04/2025_
 
 ---
 
-## 🟦 Épico 2: Revisão Manual e Classificação de Talhões
+## 🟦 Épico 2: Revisão e Classificação manual de Talhões
 
 **Objetivo:** Permitir que analistas revisem classificações automáticas e que consultores validem ou rejeitem essas revisões.
 
 ### User Stories:
 
-- ✅ Como **Analista**, eu quero **revisar a classificação automática dos talhões**, para garantir a precisão dos dados.
+- ✅ Como **Analista**, eu quero **realizar a classificação manual dos talhões**, para garantir a precisão dos dados.
 - ✅ Como **Consultor**, eu quero **validar ou reprovar revisões manuais feitas por analistas**, para garantir a qualidade dos dados.
 - ✅ Como **Consultor**, eu quero **marcar na revisão manual onde está errado no caso de uma revisão reprovada**, para garantir a qualidade dos dados.
 - ✅ Como **Consultor/Administrador**, eu quero **fazer o download das classificações manuais aprovadas**, para melhorar o treinando da IA.
