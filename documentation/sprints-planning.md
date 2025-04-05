@@ -59,11 +59,19 @@
 - Criar funcionalidade para:
   - Redimensionar, adicionar e remover vértices da classificação automática.
   - Utilizar imagens de apoio na edição.
-  - Armazenar alterações feitas.
+  - Armazenar a revisão realizada para que possa ser validada posteriormente por um consultor.
+  - Exigir justificativas obrigatórias nos casos de ser "sem solução".
+ 
+## 🧐 *Revisão Manual do Talhão*
+
+- Permitir que o **analista realize a revisão manual** das classificações automáticas dos talhões.
+- A revisão deve permitir ao analista utilizar as imagens de apoio como referência.
+- Permitir que o **consultor* fornecça um feedback ao analista em forma de desenho e texto no caso dele ser **reprovado""
+- Permitir ao consultor **validar, reprovar ou marcar como "sem solução"** a revisão feita pelo analista.
+
 
 ## ⚙️ *Operações com os Talhões*
 
-- Implementar funcionalidade para análise dos talhões.
 - Implementar funcionalidade para edição.
 - Implementar funcionalidade para exclusão.
 - Permitir download da classificação manual aprovada.
@@ -98,7 +106,7 @@ O sistema deve permitir o **cadastro, edição e exclusão de usuários**, além
 - Restringir visões e operações conforme o tipo de usuário.
 
 ## ⚙️ Gerenciamento de Fazenda, solo e cultura
-- O sistema deve permitir, criar, editar e excluir.
+- O sistema deve permitir, criar, editar e excluir essas entidades.
 
 ---
 
