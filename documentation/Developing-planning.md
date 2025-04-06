@@ -11,13 +11,11 @@
   - [Wireframes de Telas Faltantes](#wireframes-de-telas-faltantes) Cesar / Mateus / Ricardo - (07/04)
   - [Controle de Estado dos Talhões](#controle-de-estado-dos-talhões) Mateus - (11/04)
   - [Fluxograma de Permissões](#fluxograma-de-permissões) Mateus - (10/04)
-  - [Gerenciamento de Usuários](#gerenciamento-de-usuários) Paloma / Vinicius - (21/04 / 13/04)
+  - [Gerenciamento de Usuários](#gerenciamento-de-usuários) Paloma / Isaque - (21/04 / 13/04)
   - [Gerenciamento de Fazenda, Solo e Cultura](#gerenciamento-de-fazenda-solo-e-cultura) Ricardo / Cesar - (13/04)
-  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Ricardo - (21/04)
-  - [Revisão da classificação manual](#revisão-da-classificação-manual) Pendente - (21/04)
-  - [Operações com Talhões](#operações-com-talhões) Elbert / Ricardo - (21/04)
-
-
+  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Vinicius - (21/04)
+  - [Revisão da classificação manual](#revisão-da-classificação-manual) Elbert / Vinicius - (21/04)
+  - [Operações com Talhões](#operações-com-talhões) Ricardo / Isaque - (21/04)
 
 ---
 
@@ -46,6 +44,8 @@
 **Data de entrega:** 07/04/2025  
 **Descrição:**  
 - O sistema deve rapidamente persistir os talhões e suas respectivas propriedades no banco de dados.
+
+<br>
 
 ## Variáveis de Ambiente (Desenvolvimento / Produção)
 
@@ -94,16 +94,17 @@
 
 ## Classificação Manual do Talhão
 
-**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)  / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão)     
+**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)  / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão) 
 
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@r1cardvs](https://github.com/r1cardvs) (Back)  
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
+    
 
 **Front-end:** Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** Ricardo  
+**Back-end:** Vinícius  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
@@ -118,14 +119,14 @@
 
 **Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões) / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão)
 
-**Responsáveis:** PENDENTE
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)
 
-**Front-end:**  
+**Front-end:**  Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** PENDENTE  
+**Back-end:** Vinícius  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
@@ -154,11 +155,13 @@
 **Descrição:**  
 - Implementar fluxo de transição entre os estados: Pendente, Em Análise, Sem Solução, Reprovado e Aprovado.
 
+<br>
+
 ## Operações com Talhões
 
 **Épico:** [Épico 1: Cadastro e Gerenciamento de Talhões](./backlog.md/#-épico-1-cadastro-e-gerenciamento-de-talhões)
 
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@r1cardvs](https://github.com/r1cardvs) (Back)  
+**Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
 **Front-end:**  
 **Dificuldade:** 2  
@@ -182,14 +185,14 @@
 
 **Épico:** [Épico 4: Gerenciamento de Usuários e Permissões](./backlog.md/#-épico-4-gerenciamento-de-usuários-e-permissões)
 
-**Responsáveis:** [@PalomaSoaresR](https://github.com/PalomaSoaresR) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
+**Responsáveis:** [@PalomaSoaresR](https://github.com/PalomaSoaresR) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
 **Front-end:** Paloma / Cesar  
 **Dificuldade:** 2  
 **Prioridade:** 2  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** Vinicius  
+**Back-end:** Isaque  
 **Dificuldade:** 2  
 **Prioridade:** 2  
 **Data de entrega:** 13/04/2025  
