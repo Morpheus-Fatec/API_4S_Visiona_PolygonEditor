@@ -11,13 +11,11 @@
   - [Wireframes de Telas Faltantes](#wireframes-de-telas-faltantes) Cesar / Mateus / Ricardo - (07/04)
   - [Controle de Estado dos Talhões](#controle-de-estado-dos-talhões) Mateus - (11/04)
   - [Fluxograma de Permissões](#fluxograma-de-permissões) Mateus - (10/04)
-  - [CRUD de Usuários](#crud-de-usuários) Paloma / Vinicius - (21/04 / 13/04)
+  - [CRUD de Usuários](#crud-de-usuários) Paloma / Isaque - (21/04 / 13/04)
   - [Gerenciamento de Fazenda, Solo e Cultura](#gerenciamento-de-fazenda-solo-e-cultura) Ricardo / Cesar - (13/04)
-  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Ricardo - (21/04)
-  - [Revisão da classificação manual](#revisão-da-classificação-manual) Pendente - (21/04)
-  - [Operações com Talhões](#operações-com-talhões) Elbert / Ricardo - (21/04)
-
-
+  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Vinicius - (21/04)
+  - [Revisão da classificação manual](#revisão-da-classificação-manual) Elbert / Vinicius - (21/04)
+  - [Operações com Talhões](#operações-com-talhões) Ricardo / Isaque - (21/04)
 
 ---
 
@@ -95,14 +93,14 @@
 ## Classificação Manual do Talhão
 
 **Épico:** Épico 2: Revisão e Classificação manual de Talhões  
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@r1cardvs](https://github.com/r1cardvs) (Back)  
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
 
 **Front-end:** Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** Ricardo  
+**Back-end:** Vinícius  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
@@ -116,14 +114,14 @@
 ## Revisão da classificação manual
 
 **Épico:** Épico 2: Revisão e Classificação manual de Talhões  
-**Responsáveis:** PENDENTE
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)
 
-**Front-end:**  
+**Front-end:**  Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** PENDENTE  
+**Back-end:** Vinícius  
 **Dificuldade:** 3  
 **Prioridade:** 3  
 **Data de entrega:** 21/04/2025  
@@ -151,7 +149,7 @@
 
 ## Operações com Talhões
 
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@r1cardvs](https://github.com/r1cardvs) (Back)  
+**Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
 **Front-end:**  
 **Dificuldade:** 2  
@@ -173,14 +171,14 @@
 
 ## CRUD de Usuários
 
-**Responsáveis:** [@PalomaSoaresR](https://github.com/PalomaSoaresR) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
+**Responsáveis:** [@PalomaSoaresR](https://github.com/PalomaSoaresR) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
 **Front-end:** Paloma / Cesar  
 **Dificuldade:** 2  
 **Prioridade:** 2  
 **Data de entrega:** 21/04/2025  
 
-**Back-end:** Vinicius  
+**Back-end:** Isaque  
 **Dificuldade:** 2  
 **Prioridade:** 2  
 **Data de entrega:** 13/04/2025  
