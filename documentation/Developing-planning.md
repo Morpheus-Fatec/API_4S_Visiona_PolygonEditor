@@ -11,7 +11,7 @@
   - [Wireframes de Telas Faltantes](#wireframes-de-telas-faltantes) Cesar / Mateus / Ricardo - (07/04)
   - [Controle de Estado dos Talhões](#controle-de-estado-dos-talhões) Mateus - (11/04)
   - [Fluxograma de Permissões](#fluxograma-de-permissões) Mateus - (10/04)
-  - [CRUD de Usuários](#crud-de-usuários) Paloma / Isaque - (21/04 / 13/04)
+  - [Gerenciamento de Usuários](#gerenciamento-de-usuários) Paloma / Isaque - (21/04 / 13/04)
   - [Gerenciamento de Fazenda, Solo e Cultura](#gerenciamento-de-fazenda-solo-e-cultura) Ricardo / Cesar - (13/04)
   - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Vinicius - (21/04)
   - [Revisão da classificação manual](#revisão-da-classificação-manual) Elbert / Vinicius - (21/04)
@@ -44,6 +44,8 @@
 **Data de entrega:** 07/04/2025  
 **Descrição:**  
 - O sistema deve rapidamente persistir os talhões e suas respectivas propriedades no banco de dados.
+
+<br>
 
 ## Variáveis de Ambiente (Desenvolvimento / Produção)
 
@@ -92,8 +94,10 @@
 
 ## Classificação Manual do Talhão
 
-**Épico:** Épico 2: Revisão e Classificação manual de Talhões  
+**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)  / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão) 
+
 **Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
+    
 
 **Front-end:** Elbert  
 **Dificuldade:** 3  
@@ -113,7 +117,8 @@
 
 ## Revisão da classificação manual
 
-**Épico:** Épico 2: Revisão e Classificação manual de Talhões  
+**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões) / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão)
+
 **Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)
 
 **Front-end:**  Elbert  
@@ -139,7 +144,10 @@
 
 ## Controle de Estado dos Talhões
 
+**Épico:** [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão)
+
 **Responsável:** [@MateusMSoares](https://github.com/MateusMSoares)  
+
 **FullStack**  
 **Dificuldade:** 2  
 **Prioridade:** 3  
@@ -147,7 +155,11 @@
 **Descrição:**  
 - Implementar fluxo de transição entre os estados: Pendente, Em Análise, Sem Solução, Reprovado e Aprovado.
 
+<br>
+
 ## Operações com Talhões
+
+**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)
 
 **Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
@@ -163,13 +175,17 @@
 
 **Descrição:**  
 - **Front-end:**  
-  - Permitir editar as propriedades do talhão, exceto seu status.  
+  - Permitir editar as propriedades do talhão, exceto seu status.
+  - Permitir download da classificação manual aprovada, no mesmo formato do que foi enviado.
 - **Back-end:**  
+  - Permitir download da classificação manual aprovada, no formato esperado pelo cliente.
   - Atualizar talhão.
 
 <br>
 
-## CRUD de Usuários
+## Gerenciamento de Usuários
+
+**Épico:** [Épico 4: Gerenciamento de Usuários e Permissões](./backlog.md/#-épico-4-gerenciamento-de-usuários-e-permissões)
 
 **Responsáveis:** [@PalomaSoaresR](https://github.com/PalomaSoaresR) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
@@ -188,13 +204,15 @@
   - Interface para gerenciar usuários (criar, editar e excluir), apenas acessada pelo administrador.  
   - Definir campos obrigatórios para o cadastro de um usuário e alinhar com PO.  
   - Cada usuário pode ter apenas um papel.  
-  - Existem 3 papéis: administrador, consultor e analista.  
+  - Existem 3 papéis: administrador, consultor e analista. 
 - **Back-end:**  
   - CRUD de usuário.
 
 <br>
 
 ## Gerenciamento de Fazenda, Solo e Cultura
+
+**Épico:** [Épico 6: Gerenciamento de Entidades Relacionadas (Fazenda, Solo, Cultura)](./backlog.md/#-épico-6-gerenciamento-de-entidades-relacionadas-fazenda-solo-cultura)
 
 **Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@cesarpelogia](https://github.com/cesarpelogia) (Back)  
 
@@ -218,6 +236,8 @@
 
 ## Wireframes de Telas Faltantes
 
+**Épico:** [Épico 1: Cadastro e Gerenciamento de Talhões](./backlog.md/#-épico-1-cadastro-e-gerenciamento-de-talhões) / [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões) / [Épico 4: Gerenciamento de Usuários e Permissões](./backlog.md/#-épico-4-gerenciamento-de-usuários-e-permissões) 
+
 **Responsáveis:** [@cesarpelogia](https://github.com/cesarpelogia) / [@MateusMSoares](https://github.com/MateusMSoares) / [@r1cardvs](https://github.com/r1cardvs)  
 
 **Documentação:** Cesar / Mateus / Ricardo  
@@ -234,6 +254,8 @@
 <br>
 
 ## Fluxograma de Permissões
+
+**Épico:** [Épico 4: Gerenciamento de Usuários e Permissões](./backlog.md/#-épico-4-gerenciamento-de-usuários-e-permissões)
 
 **Responsável:** [@MateusMSoares](https://github.com/MateusMSoares)  
 

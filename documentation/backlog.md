@@ -23,6 +23,7 @@ _Última atualização: 05/04/2025_
 - ✅ Como **usuário**, eu quero **buscar talhões por nome, fazenda, cultura, solo, safra e situação**, para encontrar informações específicas com rapidez.
 - ✅ Como **usuário**, eu quero **visualizar detalhes completos de um talhão**, para tomar decisões com base em dados relevantes.
 - ✅ Como **usuário**, eu quero **fazer upload de arquivos GeoJSON e imagens GeoTIFF dos talhões**, para alimentar o sistema com informações georreferenciadas.
+- ✅ Como **Consultor**, eu quero **editar propriedades de um talhão**, afim de fazer alguma correção(não se aplica a geometria do talhão).
 - ✅ Como **Consultor**, eu quero **excluir talhões do sistema**, para remover registros incorretos ou desatualizados.
 
 ---
