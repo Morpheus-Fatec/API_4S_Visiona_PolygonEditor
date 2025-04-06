@@ -32,7 +32,7 @@ Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as
 | Elbert Jean         | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/elbertjean/) |
 | Gabriel Souza           | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/gabriel-alves-de-souza-5b7747267/) |
 | Isaque de Souza           | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/isaque-souza-6760b8270/) |
-| Ricardo Campos         | Product Owner     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/ricardo-campos-ba56091b5/) |
+| Ricardo Campos         | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/ricardo-campos-ba56091b5/) |
 | Paloma Soares  | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/paloma-soares-rocha/) |
 | Vinícius Monteiro  | Desenvolvedor     | [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/viniciusvasm/) |
 
@@ -54,7 +54,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 | Funcionalidade                          | Indicador |
 |-----------------------------------------|-----------|
-| Cadastro de talhões agriculas (.geojson) | I      |
+| Cadastro de talhões agrícolas (.geojson) | I      |
 | Mapa Interativo para Visualização e Edição de GeoJSON   | II       |
 | Histórico de Alterações nos Talhões     | III       |
 | Download dos Talhões Revisados         | IV        |
@@ -84,7 +84,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 | ID  | Como           | Desejo                                                                                     | Sprint | Prioridade | Dependência | Requisito |
 |-----|----------------|--------------------------------------------------------------------------------------------|--------|------------|-------------|-----------|
 | A   | Consultor      | Cadastrar talhões por meio do upload de arquivos no formato GeoJSON, para que seja possível visualizar e editar suas coordenadas e propriedades de forma eficiente. | 1      | Alta       | -           | I         |
-| B   | Analista       | Visualizar os talhões agrícolas em um mapa interativo, para que eu possa realizar análise de suas coordendas e propriedadesde forma eficiente. | 1      | Alta       | A           | II        |
+| B   | Analista       | Visualizar os talhões agrícolas em um mapa interativo, para que eu possa realizar análise de suas coordenadas  e propriedades de forma eficiente. | 1      | Alta       | A           | II        |
 | C   | Analista       | Filtrar e buscar talhões agrícolas com base em seus atributos, para que eu possa acessar rapidamente as áreas de interesse. | 1      | Média      | B           | II        |
 | D   | Consultor      | Visualizar informações detalhadas dos talhões (nome da fazenda, cultura, área, etc.), para que eu possa planejar estratégias agrícolas e realizar análises mais precisas. | 1      | Baixa      | B           | II        |
 | E   | Analista       | Editar os polígonos dos talhões no mapa, com foco na revisão e ajuste das classificações pré-realizadas, para garantir a precisão das informações e a adequação às necessidades agrícolas. | 2      | Alta       | B           | II        |
@@ -138,7 +138,7 @@ Acesse o Board de atividades do Time para visualizar as atividades planejadas, e
 - **[Diagrama Entidade-Relacionamento (DER):](./documentation/database/diagrama_ER.png)**
 
 ### Manuais
-- **[Manual de Conversão: BigTiff para TIFF:](./documentation/manuals/BigTiff%20para%20TIFF.md)** Guia para conversão de arquivos BigTiff para o formato TIFF.
+- **[Manual de Conversão: BigTIFF para TIFF:](./documentation/manuals/BigTiff%20para%20TIFF.md)** Guia para conversão de arquivos BigTIFF para o formato TIFF.
 Representação visual do modelo de dados.
 
 
