@@ -159,7 +159,7 @@
 
 ## Operações com Talhões
 
-**Épico:** [Épico 1: Cadastro e Gerenciamento de Talhões](./backlog.md/#-épico-1-cadastro-e-gerenciamento-de-talhões)
+**Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)
 
 **Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
@@ -175,8 +175,10 @@
 
 **Descrição:**  
 - **Front-end:**  
-  - Permitir editar as propriedades do talhão, exceto seu status.  
+  - Permitir editar as propriedades do talhão, exceto seu status.
+  - Permitir download da classificação manual aprovada, no mesmo formato do que foi enviado.
 - **Back-end:**  
+  - Permitir download da classificação manual aprovada, no formato esperado pelo cliente.
   - Atualizar talhão.
 
 <br>
