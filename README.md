@@ -107,10 +107,9 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 ## :chart_with_upwards_trend: <a id="grafico-burndown"> Gráfico Burndown </a>
 
-- **[Sprint 2 iniciará dia 07/04/2025]()**
-<!-- <div align="center">
-    <img src="../API_4S_Visiona_PolygonEditor/documentation/images/BurndownSprint1.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
-</div> -->
+<div align="center">
+    <img src="../API_4S_Visiona_PolygonEditor/documentation/images/BurndownSprint2.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
+</div>
 
 <br>
 
@@ -129,13 +128,13 @@ Acesse o Board de atividades do Time para visualizar as atividades planejadas, e
 ## :page_with_curl: <a id="documentação"> Documentação: </a>
 
 ### Sprint Backlog
-- **[Planejamento da Sprint Atual](./documentation/sprints-planning.md)** Detalhamento do planejamento e objetivos da sprint em andamento.
+- **[Planejamento por Sprint](./documentation/sprints-planning.md)** Detalhamento do planejamento e objetivos de todas as sprints.
 
-- **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)** Estratégias e etapas definidas para o desenvolvimento do projeto.
+- **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)** Estratégias e etapas definidas para o desenvolvimento da sprint atual.
 
 ### Banco de Dados
 - **[DDL do Banco de Dados:](./documentation/database/banco.sql)** Script de criação do banco de dados.
-- **[Diagrama Entidade-Relacionamento (DER):](./documentation/database/diagrama_ER.png)**
+- **[Diagrama Entidade-Relacionamento (DER):](./documentation/database/diagrama_ER.png)** DER representando a estrutura do banco de dados do projeto, incluindo as relações entre as entidades.
 
 ### Manuais
 - **[Manual de Conversão: BigTIFF para TIFF:](./documentation/manuals/BigTiff%20para%20TIFF.md)** Guia para conversão de arquivos BigTIFF para o formato TIFF.
