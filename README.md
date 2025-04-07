@@ -108,7 +108,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 ## :chart_with_upwards_trend: <a id="grafico-burndown"> Gráfico Burndown </a>
 
 <div align="center">
-    <img src="../API_4S_Visiona_PolygonEditor/documentation/images/BurndownSprint2.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
+    <img src="./documentation/images/BurndownSprint2.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
 </div>
 
 <br>
