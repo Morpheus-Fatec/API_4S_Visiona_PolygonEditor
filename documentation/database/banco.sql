@@ -81,3 +81,13 @@ CREATE TABLE classificacoes_revisadas (
     status estado_talhao NOT NULL
     area DECIMAL(10,2) NOT NULL
 );
+
+CREATE TABLE classificacoes_comentadas (
+    id SERIAL PRIMARY KEY,
+    id_classificacao_revisada INTEGER NOT NULL REFERENCES classificacoes_revisadas(id) ON DELETE CASCADE,
+    destaque geometry(MultiPolygon, 4326),
+    comentario TEXT NOT NULL,
+    data_inicio_validacao TIMESTAMP,
+    data_fim_validacao TIMESTAMP,
+    id_consultor INTEGER NOT NULL REFERENCES Usuarios(id_usuario)
+);
