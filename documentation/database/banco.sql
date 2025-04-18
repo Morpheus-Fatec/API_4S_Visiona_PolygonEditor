@@ -4,6 +4,8 @@ CREATE DATABASE Demeter;
 
 CREATE EXTENSION IF NOT EXISTS postgis;
 
+CREATE TYPE estado_talhao AS ENUM ('Pendente', 'Aprovado', 'Em Analise', 'Reprovado', 'Sem Solução');
+
 CREATE TABLE Fazendas (
     id_fazenda SERIAL PRIMARY KEY,
     nome VARCHAR(255) UNIQUE NOT NULL,
@@ -24,8 +26,6 @@ CREATE TABLE Solos (
 CREATE TABLE Leituras (
     id_leitura SERIAL PRIMARY KEY
 );
-
-CREATE TYPE estado_talhao AS ENUM ('Pendente', 'Aprovado', 'Em Analise', 'Reprovado', 'Sem Solução');
 
 CREATE TABLE Talhoes (
     id_talhao SERIAL PRIMARY KEY,
