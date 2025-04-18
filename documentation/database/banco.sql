@@ -2,6 +2,8 @@ CREATE DATABASE Demeter;
 
 \c Demeter;
 
+CREATE EXTENSION IF NOT EXISTS postgis;
+
 CREATE TABLE Fazendas (
     id_fazenda SERIAL PRIMARY KEY,
     nome VARCHAR(255) UNIQUE NOT NULL,
