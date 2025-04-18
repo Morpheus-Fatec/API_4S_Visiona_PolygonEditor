@@ -71,3 +71,13 @@ CREATE TABLE classificacoes_originais (
     area DECIMAL(10,2) NOT NULL
 );
 
+CREATE TABLE classificacoes_revisadas (
+    id SERIAL PRIMARY KEY,
+    id_classificacao_original INTEGER NOT NULL REFERENCES classificacoes_originais(id_classificacao) ON DELETE CASCADE,
+    coordenadas geometry(MultiPolygon, 4326) NOT NULL,
+    data_inicio_analise TIMESTAMP,
+    data_fim_analise TIMESTAMP,
+    id_analista INTEGER NOT NULL REFERENCES Usuarios(id_usuario),
+    status estado_talhao NOT NULL
+    area DECIMAL(10,2) NOT NULL
+);
