@@ -67,7 +67,7 @@ CREATE TABLE classificacoes_originais (
     id_classificacao SERIAL PRIMARY KEY,
     coordenadas_originais geometry(MultiPolygon, 4326) NOT NULL,
     id_talhao INTEGER NOT NULL REFERENCES Talhoes(id_talhao) ON DELETE CASCADE,
-    id_classe INTEGER NOT NULL REFERENCES Classes(id_classe) ON DELETE CASCADE
+    id_classe INTEGER NOT NULL REFERENCES Classes(id_classe) ON DELETE CASCADE,
     area DECIMAL(10,2) NOT NULL
 );
 
@@ -78,7 +78,7 @@ CREATE TABLE classificacoes_revisadas (
     data_inicio_analise TIMESTAMP,
     data_fim_analise TIMESTAMP,
     id_analista INTEGER NOT NULL REFERENCES Usuarios(id_usuario),
-    status estado_talhao NOT NULL
+    status estado_talhao NOT NULL,
     area DECIMAL(10,2) NOT NULL
 );
 
