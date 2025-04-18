@@ -63,11 +63,11 @@ CREATE TABLE Classes (
     nome VARCHAR(255) UNIQUE NOT NULL
 );
 
-CREATE TABLE Classificacoes (
+CREATE TABLE classificacoes_originais (
     id_classificacao SERIAL PRIMARY KEY,
-    coordenadas_atuais TEXT NOT NULL,
-    coordenadas_originais TEXT NOT NULL,
-    id_talhao INTEGER REFERENCES Talhoes(id_talhao) ON DELETE CASCADE,
-    id_classe INTEGER REFERENCES Classes(id_classe) ON DELETE SET NULL,
+    coordenadas_originais geometry(MultiPolygon, 4326) NOT NULL,
+    id_talhao INTEGER NOT NULL REFERENCES Talhoes(id_talhao) ON DELETE CASCADE,
+    id_classe INTEGER NOT NULL REFERENCES Classes(id_classe) ON DELETE CASCADE
     area DECIMAL(10,2) NOT NULL
 );
+
