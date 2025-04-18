@@ -38,7 +38,7 @@ CREATE TABLE Talhoes (
     area DECIMAL(10,2) NOT NULL,
     produtividade FLOAT NOT NULL,
     estado estado_talhao NOT NULL,
-    coordenadas TEXT NOT NULL
+    coordenadas geometry(MultiPolygon, 4326) NOT NULL
 );
 
 CREATE TABLE ImagensApoio (
