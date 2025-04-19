@@ -73,8 +73,8 @@ CREATE TABLE classificacao_automatica (
 
 CREATE TABLE classificacao_manual (
     id SERIAL PRIMARY KEY,
-    id_classificacao_automatica INTEGER NOT NULL REFERENCES classificacoes_originais(id_classificacao) ON DELETE CASCADE,
-    coordenadas geometry(MultiPolygon, 4326) NOT NULL,
+    id_classificacao_automatica INTEGER NOT NULL REFERENCES classificacoes_automaticas(id_classificacao) ON DELETE CASCADE,
+    coordenadas_manuais geometry(MultiPolygon, 4326) NOT NULL,
     data_inicio_analise TIMESTAMP,
     data_fim_analise TIMESTAMP,
     id_analista INTEGER NOT NULL REFERENCES Usuarios(id_usuario),
@@ -84,7 +84,7 @@ CREATE TABLE classificacao_manual (
 CREATE TABLE classificacoes_comentadas (
     id SERIAL PRIMARY KEY,
     id_classificacao_manual  INTEGER NOT NULL REFERENCES classificacoes_revisadas(id) ON DELETE CASCADE,
-    destaque geometry(MultiPolygon, 4326),
+    coordenadas_destaque geometry(MultiPolygon, 4326),
     comentario TEXT NOT NULL,
     data_inicio_validacao TIMESTAMP,
     data_fim_validacao TIMESTAMP,
