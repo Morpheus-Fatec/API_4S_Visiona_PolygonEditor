@@ -78,7 +78,6 @@ CREATE TABLE classificacao_manual (
     data_inicio_analise TIMESTAMP,
     data_fim_analise TIMESTAMP,
     id_analista INTEGER NOT NULL REFERENCES Usuarios(id_usuario),
-    status estado_talhao NOT NULL,
     area DECIMAL(10,2) NOT NULL
 );
 
