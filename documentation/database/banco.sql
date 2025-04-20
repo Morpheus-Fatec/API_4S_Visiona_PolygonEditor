@@ -64,7 +64,7 @@ CREATE TABLE Classes (
 );
 
 CREATE TABLE classificacao_automatica (
-    id_classificacao SERIAL PRIMARY KEY,
+    id_classificacao_automatica SERIAL PRIMARY KEY,
     coordenadas_automaticas geometry(MultiPolygon, 4326) NOT NULL,
     id_talhao INTEGER NOT NULL REFERENCES Talhoes(id_talhao) ON DELETE CASCADE,
     id_classe INTEGER NOT NULL REFERENCES Classes(id_classe) ON DELETE CASCADE,
@@ -72,8 +72,8 @@ CREATE TABLE classificacao_automatica (
 );
 
 CREATE TABLE classificacao_manual (
-    id SERIAL PRIMARY KEY,
-    id_classificacao_automatica INTEGER NOT NULL REFERENCES classificacao_automatica(id_classificacao) ON DELETE CASCADE,
+    id_classificacao_manual SERIAL PRIMARY KEY,
+    id_classificacao_automatica INTEGER NOT NULL REFERENCES classificacao_automatica(id_classificacao_automatica) ON DELETE CASCADE,
     coordenadas_manuais geometry(MultiPolygon, 4326) NOT NULL,
     data_inicio_analise TIMESTAMP,
     data_fim_analise TIMESTAMP,
@@ -81,9 +81,9 @@ CREATE TABLE classificacao_manual (
     area DECIMAL(10,2) NOT NULL
 );
 
-CREATE TABLE classificacao_manual_revisada (
-    id SERIAL PRIMARY KEY,
-    id_classificacao_manual  INTEGER NOT NULL REFERENCES classificacao_manual(id) ON DELETE CASCADE,
+CREATE TABLE revisao_classificacao_manual (
+    id_revisao_classificacao_manual SERIAL PRIMARY KEY,
+    id_classificacao_manual  INTEGER NOT NULL REFERENCES classificacao_manual(id_classificacao_manual) ON DELETE CASCADE,
     coordenadas_destaque geometry(MultiPolygon, 4326),
     comentario TEXT NOT NULL,
     data_inicio_validacao TIMESTAMP,
