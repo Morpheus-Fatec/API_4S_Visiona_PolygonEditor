@@ -128,17 +128,27 @@ Acesse o Board de atividades do Time para visualizar as atividades planejadas, e
 ## :page_with_curl: <a id="documentação"> Documentação: </a>
 
 ### Sprint Backlog
-- **[Planejamento por Sprint](./documentation/sprints-planning.md)** Detalhamento do planejamento e objetivos de todas as sprints.
 
-- **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)** Estratégias e etapas definidas para o desenvolvimento da sprint atual.
+Detalhamento do planejamento e objetivos de todas as sprints.
+- **[Planejamento por Sprint](./documentation/sprints-planning.md)**
+
+Estratégias e etapas definidas para o desenvolvimento da sprint em curso.
+- **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)**
 
 ### Banco de Dados
-- **[DDL do Banco de Dados:](./documentation/database/banco.sql)** Script de criação do banco de dados.
-- **[Diagrama Entidade-Relacionamento (DER):](./documentation/database/diagrama_ER.png)** DER representando a estrutura do banco de dados do projeto, incluindo as relações entre as entidades.
+
+Script de criação do banco de dados.
+- **[DDL do Banco de Dados:](./documentation/database/banco.sql)**
+
+DER representando a estrutura do banco de dados do projeto, incluindo as relações entre as entidades.
+- **[Diagrama Entidade-Relacionamento (DER) - Notação Chen](./documentation/database/DER%20Demeter%20-%20Notação%20Chen.png)**
+- **[Diagrama Entidade-Relacionamento (DER) - Notação Crow's Foot](./documentation/database/DER%20Demeter%20-%20Notação%20Crow’s%20Foot.png)**
+
 
 ### Manuais
-- **[Manual de Conversão: BigTIFF para TIFF:](./documentation/manuals/BigTiff%20para%20TIFF.md)** Guia para conversão de arquivos BigTIFF para o formato TIFF.
-Representação visual do modelo de dados.
+
+Guia para conversão de arquivos BigTIFF para o formato TIFF.
+- **[Manual de Conversão: BigTIFF para TIFF](./documentation/manuals/BigTiff%20para%20TIFF.md)**
 
 
 
