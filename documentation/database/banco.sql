@@ -12,8 +12,8 @@ CREATE TYPE estado_talhao AS ENUM ('Pendente', 'Aprovado', 'Em Analise', 'Reprov
 CREATE TABLE Fazendas (
     id_fazenda SERIAL PRIMARY KEY,
     nome VARCHAR(255) UNIQUE NOT NULL,
-    cidade VARCHAR(255) NOT NULL,
-    estado VARCHAR(100) NOT NULL
+    cidade VARCHAR(255),
+    estado VARCHAR(100)
 );
 
 -- Tabela Culturas: Armazena os tipos de culturas agrícolas.
@@ -38,12 +38,12 @@ CREATE TABLE Talhoes (
     id_talhao SERIAL PRIMARY KEY,
     id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE SET NULL,
     id_fazenda INTEGER REFERENCES Fazendas(id_fazenda) ON DELETE CASCADE,
-    safra VARCHAR(7) NOT NULL,
+    safra VARCHAR(7),
     id_cultura INTEGER REFERENCES Culturas(id_cultura) ON DELETE SET NULL,
     id_solo INTEGER REFERENCES Solos(id_solo) ON DELETE SET NULL,
     nome VARCHAR(255) NOT NULL,
     area DECIMAL(10,2) NOT NULL,
-    produtividade FLOAT NOT NULL,
+    produtividade FLOAT,
     estado estado_talhao NOT NULL,
     coordenadas geometry(MultiPolygon, 4326) NOT NULL
 );
