@@ -38,7 +38,7 @@ CREATE TABLE Talhoes (
     id_talhao SERIAL PRIMARY KEY,
     id_leitura INTEGER REFERENCES Leituras(id_leitura) ON DELETE SET NULL,
     id_fazenda INTEGER REFERENCES Fazendas(id_fazenda) ON DELETE CASCADE,
-    safra VARCHAR(7),
+    safra VARCHAR(7) NOT NULL,
     id_cultura INTEGER REFERENCES Culturas(id_cultura) ON DELETE SET NULL,
     id_solo INTEGER REFERENCES Solos(id_solo) ON DELETE SET NULL,
     nome VARCHAR(255) NOT NULL,
