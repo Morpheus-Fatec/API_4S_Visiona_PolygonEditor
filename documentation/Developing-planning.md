@@ -13,9 +13,9 @@
   - [Fluxograma de Permissões](#fluxograma-de-permissões) Mateus - (10/04)
   - [Gerenciamento de Usuários](#gerenciamento-de-usuários) Paloma / Isaque - (21/04 / 13/04)
   - [Gerenciamento de Fazenda, Solo e Cultura](#gerenciamento-de-fazenda-solo-e-cultura) Ricardo / Cesar - (13/04)
-  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Vinicius - (21/04)
-  - [Revisão da classificação manual](#revisão-da-classificação-manual) Elbert / Vinicius - (21/04)
-  - [Operações com Talhões](#operações-com-talhões) Ricardo / Isaque - (21/04)
+  - [Classificação Manual do Talhão](#classificação-manual-do-talhão) Elbert / Mateus - (21/04)
+  - [Revisão da classificação manual](#revisão-da-classificação-manual) Elbert / Mateus - (21/04)
+  - [Operações com Talhões](#operações-com-talhões) Elbert / Isaque - (21/04)
 
 ---
 
@@ -96,18 +96,18 @@
 
 **Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)  / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão) 
 
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)  
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) /[@MateusMSoares](https://github.com/MateusMSoares) (Back)  
     
 
 **Front-end:** Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
-**Data de entrega:** 21/04/2025  
+**Data de entrega:** 27/04/2025  
 
-**Back-end:** Vinícius  
+**Back-end:** Mateus  
 **Dificuldade:** 3  
 **Prioridade:** 3  
-**Data de entrega:** 21/04/2025  
+**Data de entrega:** 27/04/2025  
 
 **Descrição:**  
 - **Front-end:** Permitir ao analista criar uma versão manual da classificação.  
@@ -119,17 +119,17 @@
 
 **Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões) / [Épico 3: Controle de Estado do Talhão](./backlog.md/#-épico-3-controle-de-estado-do-talhão)
 
-**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@viniciusFUU](https://github.com/viniciusFUU) (Back)
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean) (Front) / [@MateusMSoares](https://github.com/MateusMSoares) (Back)
 
 **Front-end:**  Elbert  
 **Dificuldade:** 3  
 **Prioridade:** 3  
-**Data de entrega:** 21/04/2025  
+**Data de entrega:** 27/04/2025  
 
-**Back-end:** Vinícius  
+**Back-end:** Mateus  
 **Dificuldade:** 3  
 **Prioridade:** 3  
-**Data de entrega:** 21/04/2025  
+**Data de entrega:** 27/04/2025  
 
 **Descrição:**  
 - **Front-end:**  
@@ -161,7 +161,7 @@
 
 **Épico:** [Épico 2: Revisão e Classificação manual de Talhões](./backlog.md/#-épico-2-revisão-e-classificação-manual-de-talhões)
 
-**Responsáveis:** [@r1cardvs](https://github.com/r1cardvs) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
+**Responsáveis:** [@ElbertJean](https://github.com/ElbertJean)  (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
 
 **Front-end:**  
 **Dificuldade:** 2  
@@ -270,23 +270,17 @@
 
 ---
 
-<br><br>
-
 # Sprint 3 - Tarefas (05/05 - 25/05)
+
 
 ## Segurança e Autenticação
 
-**Responsáveis:** [@gabriel15asouza](https://github.com/gabriel15asouza) (Front) / [@Isaque-BD](https://github.com/Isaque) (Back)  
+**Responsáveis:** [@gabriel15asouza](https://github.com/gabriel15asouza)
 
-**Front-end:** Gabriel  
+**Full Stack:** Gabriel  
 **Dificuldade:** 2  
 **Prioridade:** 2  
-**Data de entrega:** 21/04/2025  
-
-**Back-end:** Isaque  
-**Dificuldade:** 2  
-**Prioridade:** 2  
-**Data de entrega:** 21/04/2025  
+**Data de entrega:** 27/04/2025  
 
 **Descrição:**  
 - **Front-end:**  
@@ -295,7 +289,7 @@
   - Bloquear endpoints para usuários não autorizados.  
   - Implementar autenticação e autorização segura.
 
-<br>
+
 
 ## Localização por Coordenadas
 
