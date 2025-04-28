@@ -70,7 +70,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 | --  | KickOff   | 24/02   | 28/02 | Ok |
 |  1  | Sprint 1   | 10/03   | 30/03 | Ok |
 |  2  | Sprint review / Planning   | 31/03   | 04/04 | Ok |
-|  3  | Sprint 2   | 07/04   | 27/04 |  |
+|  3  | Sprint 2   | 07/04   | 27/04 | Ok |
 |  4  | Sprint review / Planning  | 28/04   | 02/05 |  |
 |  5  | Sprint 3   | 05/05   | 25/05 |  |
 |  6  | Sprint review   | 26/05   | 28/05 |  |
