@@ -2,12 +2,10 @@
 Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as correções. Projeto desenvolvido para a disciplina de Tecnologia em Banco de Dados da Fatec São José dos Campos - Prof. Jessen Vidal.
 
 <br>
-<br>
-<div style="display: flex; justify-content: center; gap: 80px; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+<br><div style="display: flex; justify-content: center; gap: 80px; align-items: center; margin-top: 20px; margin-bottom: 20px;">
     <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" width="40%">
     <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" width="40%">
 </div>
-<br>
 <br>
 <p align="center">
   <a href="#integrantes-da-equipe">Integrantes da Equipe</a> •
@@ -135,7 +133,21 @@ Detalhamento do planejamento e objetivos de todas as sprints.
 Estratégias e etapas definidas para o desenvolvimento da sprint em curso.
 - **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)**
 
+### Especificação do Sistema e Fluxos Operacionais
+
+Controle de Acessos e Perfis de Usuários
+- **[Descrição do Escopo de Usuários](./documentation/flows/user/user_flow.md)**
+- **[Diagrama do Escopo de Usuários](./documentation/flows/user/user_flow.png)**
+
+Ciclo Operacional de Análise
+
+- **[Descrição do Fluxo de Análise e Avaliação](./documentation/flows/field/field_state_flow.md)**
+- **[Diagrama do Fluxo de Análise e Avaliação](./documentation/flows/field/field_state_flow.png)**
+
 ### Banco de Dados
+
+Organização das Entidades
+- **[Descrição das Entidades](./documentation/database/entity_description.md)**
 
 Script de criação do banco de dados.
 - **[DDL do Banco de Dados:](./documentation/database/banco.sql)**
