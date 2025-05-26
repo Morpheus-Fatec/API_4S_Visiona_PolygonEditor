@@ -3,14 +3,12 @@ Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: center; ">
-  <div style="display: flex; justify-content: center; align-items: center; width: 350px; min-width: 200px; height: 220px;">
-    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" style="display: block; margin: auto; width: 350px; height: 220px; object-fit: contain;">
-  </div>
-  <div style="display: flex; justify-content: center; align-items: center; width: 350px; min-width: 200px; height: 220px;">
-    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" style="display: block; margin: auto; width: 260px; height: 160px; object-fit: contain;">
-  </div>
+<br>
+<br><div style="display: flex; justify-content: center; gap: 80px; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" width="40%">
+    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" width="40%">
 </div>
+<br>
 
 <br>
 <p align="center">
@@ -112,7 +110,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 ## :chart_with_upwards_trend: <a id="grafico-burndown"> Gráfico Burndown </a>
 
 <div align="center">
-    <img src="./documentation/images/BurndownSprint2.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
+    <img src="./documentation/images/BurndownSprint3.png" alt="Gráfico Burndown" alt="Gráfico Burndown" width="75%">
 </div>
 
 <br>
