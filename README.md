@@ -2,21 +2,27 @@
 Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as correções. Projeto desenvolvido para a disciplina de Tecnologia em Banco de Dados da Fatec São José dos Campos - Prof. Jessen Vidal.
 
 <br>
-<br><div style="display: flex; justify-content: center; gap: 80px; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" width="40%">
-    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" width="40%">
+
+<div style="display: flex; justify-content: center; align-items: center; ">
+  <div style="display: flex; justify-content: center; align-items: center; width: 350px; min-width: 200px; height: 220px;">
+    <img src="./documentation/images/Logo_Morpheus.png" alt="Logotipo Morpheus" style="display: block; margin: auto; width: 350px; height: 220px; object-fit: contain;">
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; width: 350px; min-width: 200px; height: 220px;">
+    <img src="./documentation/images/logo-visiona.svg" alt="Logotipo Visiona" style="display: block; margin: auto; width: 260px; height: 160px; object-fit: contain;">
+  </div>
 </div>
+
 <br>
 <p align="center">
-  <a href="#integrantes-da-equipe">Integrantes da Equipe</a> •
-  <a href="#descrição-do-desafio">Descrição do Desafio</a> •
-  <a href="#objetivo">Objetivo do Projeto</a> •
-  <a href="#requisitos">Requisitos Funcionais</a> •
-  <a href="#cronograma">Cronograma</a> •
-  <a href="#product-backlog">Product Backlog</a> •
-  <a href="#grafico-burndown">Gráfico Burndown</a> •
-  <a href="#documentação">Documentação</a> •
-  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a>
+  <a href="#integrantes-da-equipe">👥 Integrantes da Equipe</a> •
+  <a href="#descrição-do-desafio">📝 Descrição do Desafio</a> •
+  <a href="#objetivo">🎯 Objetivo do Projeto</a> •
+  <a href="#requisitos">📋 Requisitos Funcionais</a> •
+  <a href="#cronograma">📅 Cronograma</a> •
+  <a href="#product-backlog">🗂️ Product Backlog</a> •
+  <a href="#grafico-burndown">📈 Gráfico Burndown</a> •
+  <a href="#documentação">📚 Documentação</a> •
+  <a href="#tecnologias-utilizadas">🛠️ Tecnologias Utilizadas</a>
 </p>
 
 <br>
@@ -42,13 +48,13 @@ Editor de polígonos que oferece métricas qualitativas e quantitativas sobre as
 
 <br>
 
-## :dart: <a id="objetivo"> Objetivo do Projeto
+## :dart: <a id="objetivo"> Objetivo do Projeto 🎯
 
 Este projeto tem como objetivo desenvolver um sistema Web para análise e edição geoespacial voltado para o setor agrícola, permitindo a interação entre administradores, analistas e consultores. A plataforma fornecerá ferramentas para visualização, edição e análise de dados geoespaciais em tempo real, contribuindo para a melhoria da performance de modelos de inteligência artificial utilizados no mapeamento agrícola. Além disso, o sistema oferecerá um dashboard para monitoramento e possibilitará a utilização de benchmarks da produtividade dos analistas.
 
 <br>
 
-## :page_facing_up: <a id="requisitos"> Requisitos Funcionais </a>
+## :page_facing_up: <a id="requisitos"> Requisitos Funcionais 📋 </a>
 
 | Funcionalidade                          | Indicador |
 |-----------------------------------------|-----------|
@@ -63,7 +69,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 <br>
 
-## :calendar: <a id="cronograma"> Cronograma </a>
+## :calendar: <a id="cronograma"> Cronograma 📅 </a>
 
 | Sprint  | Nome | Data inicio  | Data Fim | Status |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -71,14 +77,14 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 |  1  | Sprint 1   | 10/03   | 30/03 | Ok |
 |  2  | Sprint review / Planning   | 31/03   | 04/04 | Ok |
 |  3  | Sprint 2   | 07/04   | 27/04 | Ok |
-|  4  | Sprint review / Planning  | 28/04   | 02/05 |  |
-|  5  | Sprint 3   | 05/05   | 25/05 |  |
-|  6  | Sprint review   | 26/05   | 28/05 |  |
+|  4  | Sprint review / Planning  | 28/04   | 02/05 | Ok |
+|  5  | Sprint 3   | 05/05   | 25/05 | Ok |
+|  6  | Sprint review   | 26/05   | 28/05 ||
 |  7  | Feira de Soluções  | 29/12     |
 
 <br>
 
-## :date: <a id="product-backlog"> Product BackLog: </a>
+## :date: <a id="product-backlog"> Product BackLog 🗂️ </a>
 | ID  | Como           | Desejo                                                                                     | Sprint | Prioridade | Dependência | Requisito |
 |-----|----------------|--------------------------------------------------------------------------------------------|--------|------------|-------------|-----------|
 | A   | Consultor      | Cadastrar talhões por meio do upload de arquivos no formato GeoJSON, para que seja possível visualizar e editar suas coordenadas e propriedades de forma eficiente. | 1      | Alta       | -           | I         |
@@ -97,7 +103,7 @@ Este projeto tem como objetivo desenvolver um sistema Web para análise e ediç�
 
 <a href="/documentation/backlog.md" target="_blank">
     <button style="background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
-        Acessar critério de Aprovação
+        ✅ Acessar critério de Aprovação
     </button>
 </a>
 
@@ -123,9 +129,18 @@ Acesse o Board de atividades do Time para visualizar as atividades planejadas, e
 
 <br>
 
-## :page_with_curl: <a id="documentação"> Documentação: </a>
+## :page_with_curl: <a id="documentação"> Documentação 📄</a>
 
-### Sprint Backlog
+### Manuais 📚
+
+Manual de utilização  completo do sistema, com orientações detalhadas sobre as principais funcionalidades.
+
+- **[Manual de Utilização](./documentation/manuals/00%20-%20Manual_Indice.md)**
+
+Guia para conversão de arquivos BigTIFF para o formato TIFF.
+- **[Manual de Conversão: BigTIFF para TIFF](./documentation/manuals/BigTiff%20para%20TIFF.md)**
+
+### Sprint Backlog 🏃
 
 Detalhamento do planejamento e objetivos de todas as sprints.
 - **[Planejamento por Sprint](./documentation/sprints-planning.md)**
@@ -133,7 +148,7 @@ Detalhamento do planejamento e objetivos de todas as sprints.
 Estratégias e etapas definidas para o desenvolvimento da sprint em curso.
 - **[Planejamento de Desenvolvimento](./documentation/Developing-planning.md)**
 
-### Especificação do Sistema e Fluxos Operacionais
+### Especificação do Sistema e Fluxos Operacionais 🔄
 
 Controle de Acessos e Perfis de Usuários
 - **[Descrição do Escopo de Usuários](./documentation/flows/user/user_flow.md)**
@@ -144,7 +159,13 @@ Ciclo Operacional de Análise
 - **[Descrição do Fluxo de Análise e Avaliação](./documentation/flows/field/field_state_flow.md)**
 - **[Diagrama do Fluxo de Análise e Avaliação](./documentation/flows/field/field_state_flow.png)**
 
-### Banco de Dados
+### Dashboard 📊
+
+Documentação detalhada dos parâmetros e métricas exibidos nos dashboards do sistema, incluindo descrições dos gráficos, filtros disponíveis e fórmulas utilizadas para os principais indicadores de desempenho.
+
+- **[Documentação dos Dashboards](./documentation/dashboard/dashboard_rules.md)**
+
+### Banco de Dados 🗄️
 
 Organização das Entidades
 - **[Descrição das Entidades](./documentation/database/entity_description.md)**
@@ -156,19 +177,11 @@ DER representando a estrutura do banco de dados do projeto, incluindo as relaç�
 - **[Diagrama Entidade-Relacionamento (DER) - Notação Chen](./documentation/database/DER%20Demeter%20-%20Notação%20Chen.png)**
 - **[Diagrama Entidade-Relacionamento (DER) - Notação Crow's Foot](./documentation/database/DER%20Demeter%20-%20Notação%20Crow’s%20Foot.png)**
 
-
-### Manuais
-
-Guia para conversão de arquivos BigTIFF para o formato TIFF.
-- **[Manual de Conversão: BigTIFF para TIFF](./documentation/manuals/BigTiff%20para%20TIFF.md)**
-
-
-
 <br>
 
-## :bookmark: <a id="tecnologias-utilizadas"> Tecnologias Utilizadas </a>
+## :bookmark: <a id="tecnologias-utilizadas"> Tecnologias Utilizadas 🛠️</a>
 
-### **Back-end**
+### **Back-end** ⚙️
 - **[Java:](https://www.java.com/pt-BR/)** Versão 17
 - **[Spring Boot:](https://spring.io/projects/spring-boot)** Versão 3.4.3
 - **[AWS SDK:](https://aws.amazon.com/sdk-for-java/)** Versão 2.20.0
@@ -177,7 +190,7 @@ Guia para conversão de arquivos BigTIFF para o formato TIFF.
 - **[PostgreSQL:](https://www.postgresql.org/)** Versão 15.2
 - **[PostGIS:](https://postgis.net/)** Versão 3.3.3
 
-### **Front-end**
+### **Front-end** 🎨
 - **[Vue.js:](https://vuejs.org/)** Versão 3.5.13
 - **[Vue Router:](https://router.vuejs.org/)** Versão 4.5.0
 - **[Pinia:](https://pinia.vuejs.org/)** Versão 3.0.1
@@ -187,11 +200,12 @@ Guia para conversão de arquivos BigTIFF para o formato TIFF.
 - **[Leaflet Draw:](https://github.com/Leaflet/Leaflet.draw)** Versão 1.0.4
 - **[Georaster Layer for Leaflet:](https://github.com/GeoTIFF/georaster-layer-for-leaflet)** Versão 3.10.0
 - **[Axios:](https://axios-http.com/)** Versão 1.8.4
+- **[Vue Chart.js:](https://vue-chartjs.org/)** Versão 5.4.0
 
-### **Ambiente de Execução**
+### **Ambiente de Execução** 💻
 - **[Node.js:](https://nodejs.org/pt)** Versão 22.14
 
-### **Ferramentas de Desenvolvimento**
+### **Ferramentas de Desenvolvimento** 🛠️
 - **[Vite:](https://vitejs.dev/)** Versão 6.2.1
 - **[TypeScript:](https://www.typescriptlang.org/)** Versão 5.8.0
 - **[Git:](https://git-scm.com/)** Controle de versão

@@ -141,3 +141,8 @@ O sistema deve permitir que os usuários validem as revisões manuais realizadas
 
 - Revisão de funcionalidades.
 - Correção de possíveis bugs.
+---
+
+[⬅️ Voltar ao início](../README.md)
+
+---
