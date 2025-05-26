@@ -67,6 +67,11 @@ CREATE TABLE Usuarios (
     analista BOOLEAN NOT NULL DEFAULT FALSE
 );
 
+-- Inserção do usuário administrador para primeiro acesso
+INSERT INTO Usuarios (nome, email, senha, administrador, consultor, analista)
+VALUES ('Administrador', 'admim@admin.com.br', 'admin', TRUE, FALSE, FALSE);
+
+
 -- Tabela Classes: Armazena as classes de classificação utilizadas no sistema.
 CREATE TABLE Classes (
     id_classe SERIAL PRIMARY KEY,

@@ -300,3 +300,8 @@
 **Data de entrega:** 21/04/2025  
 **Descrição:**  
 - Detectar automaticamente cidade e estado ao importar talhões via GeoJSON.
+---
+
+[⬅️ Voltar ao início](../README.md)
+
+---

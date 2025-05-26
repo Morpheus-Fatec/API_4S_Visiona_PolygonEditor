@@ -142,4 +142,8 @@ Os dados são georreferenciados (usando PostGIS no banco) e organizados em **lei
   - `coordenadas_destaque` (MultiPolygon - armazenado como String no sistema)
   - `comentario`
 
-  ---
+---
+
+[⬅️ Voltar ao início](../../README.md)
+
+---

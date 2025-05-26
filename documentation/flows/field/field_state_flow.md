@@ -14,19 +14,19 @@ O fluxo de controle de classificação no sistema funciona da seguinte forma:
 4. **🛠️ Controle de Classificação criado:**  
    Para cada talhão, é criado um **Controle de Classificação**, onde será armazenado o histórico de atividades de classificação.
 
-
-5. **📝 Classificação Manual:**  
-   Um **analista** realiza uma **Classificação Manual** sobre os talhões, corrigindo ou refinando a classificação automática. Caso 
-   - O talhão é marcado como `Sem Solução`, quando não é possível realizar a análise.
-
-6. **⌛ Em Análise:**  
+5. **⌛ Em Análise:**  
    Após a classificação manual, o talhão fica com o status `Em Análise`.
 
-7. **🔎 Avaliação da Classificação Manual:**  
+6. **🔎 Avaliação da Classificação Manual:**  
    O **consultor** avalia a classificação manual:
 
    - Se **Aprovado** → O talhão muda para `Aprovado` ✅
    - Se **Reprovado** → O talhão muda para o status `Reprovado` e retorna para o **analista** fazer uma nova rodada de ajustes 🔄
 
-8. **🏁 Finalização:**  
+6. **🏁 Finalização:**  
    Quando o talhão é aprovado, a opção de download dos dados é habilitada e o ciclo de classificação do talhão é encerrado.
+---
+
+[⬅️ Voltar ao início](../../../README.md)
+
+---

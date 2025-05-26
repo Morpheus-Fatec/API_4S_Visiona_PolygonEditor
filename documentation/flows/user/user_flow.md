@@ -18,3 +18,9 @@ O escopo de atuação de cada tipo de usuário funciona da seguinte forma:
    - **Visualizar talhões** em um mapa interativo para analisar suas coordenadas e propriedades.  
    - **Filtrar e buscar talhões** por atributos, facilitando o acesso às áreas de interesse.  
    - **Editar polígonos** dos talhões para garantir precisão nas classificações.  
+
+   ---
+
+   [⬅️ Voltar ao início](../../../README.md)
+
+   ---
