@@ -93,3 +93,6 @@ _Última atualização: 05/04/2025_
 
 ---
 
+[⬅️ Voltar ao início](../README.md)
+
+---

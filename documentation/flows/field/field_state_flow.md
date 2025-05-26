@@ -25,3 +25,8 @@ O fluxo de controle de classificação no sistema funciona da seguinte forma:
 
 6. **🏁 Finalização:**  
    Quando o talhão é aprovado, a opção de download dos dados é habilitada e o ciclo de classificação do talhão é encerrado.
+---
+
+[⬅️ Voltar ao início](../../../README.md)
+
+---

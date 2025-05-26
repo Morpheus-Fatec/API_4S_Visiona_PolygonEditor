@@ -25,3 +25,9 @@ Na janela de exportação, selecione o formato **GeoTIFF** e escolha a opção *
 Após a exportação, o novo arquivo TIFF estará disponível para upload na aplicação.
 
 ![TIFF sendo carregado na aplicação](/documentation/images/bigtiff-para-tiff/image-4.png)
+
+---
+
+[⬅️ Voltar ao início](../..//README.md)
+
+---
